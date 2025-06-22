@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menu de Aulas</title>
+  <link rel="stylesheet" href="css/menu.css" />
+</head>
+<body>
+  <!-- Botão para abrir menu -->
+  <div class="menu-toggle" onclick="toggleSidebar()">☰ Menu</div>
+
+  <!-- Menu lateral oculto -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <span class="close-btn" onclick="toggleSidebar()">✖</span>
+    </div>
+    <ul>
+      <li><a href="#" onclick="carregarAula(this, 'aula01')" class="active">🟦 Aula 01</a></li>
+      <li><a href="#" onclick="carregarAula(this, 'aula02')">🟩 Aula 02</a></li>
+      <li><a href="#" onclick="carregarAula(this, 'aula03')">🟥 Aula 03</a></li>
+    </ul>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="main-content">
+    <iframe id="iframeAula" src="./aulas/aula01.html"></iframe>
+  </div>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
