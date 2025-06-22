@@ -22,11 +22,10 @@ html, body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-/* Sidebar oculta */
 .sidebar {
   position: fixed;
   top: 0;
-  left: -260px; /* Esconde completamente fora da tela */
+  left: -260px;
   width: 250px;
   height: 100%;
   background-color: #1e293b;
@@ -34,9 +33,21 @@ html, body {
   transition: left 0.3s ease;
   z-index: 1000;
   padding: 10px 10px;
-  opacity: 0;          /* <- Esconde visualmente */
-  pointer-events: none; /* <- Impede interação */
+  opacity: 0;
+  pointer-events: none;
+  overflow-y: auto; /* ✅ permite rolagem */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #334155 transparent;
 }
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #334155;
+  border-radius: 4px;
+}
+
 
 /* Quando o menu estiver ativo */
 .sidebar.active {

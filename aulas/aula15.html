@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 15 - English Class</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/lesson-style.css">
+</head>
+
+<body class="dark">
+  <button id="theme-toggle">☀️ Light Mode</button>
+
+  <h1>Lesson 15</h1>
+  <p style="text-align:center; font-style:italic; color:#60a5fa; margin-top: -10px;">
+    💡 Clique nas frases em azul para ouvir a pronúncia em inglês.
+  </p>
+
+<!-- Frases: I Help / I Know -->
+<div class="divider"></div>
+<div class="grid-2 equal-split">
+  <!-- Coluna I Help -->
+  <div class="card">
+    <div class="text-blue">I help.</div>Eu ajudo<br><br>
+    <div class="text-blue">I help my cousin.</div>Eu ajudo meu primo.<br><br>
+    <div class="text-blue">I help my uncle.</div>Eu ajudo meu tio.<br><br>
+    <div class="text-blue">I help my aunt.</div>Eu ajudo minha tia.<br><br>
+    <div class="text-blue">I help my relatives.</div>Eu ajudo meus parentes.<br><br>
+    <div class="text-blue">I help my family.</div>Eu ajudo minha família.<br><br>
+  </div>
+
+  <!-- Coluna I Know -->
+  <div class="card">
+    <div class="text-blue">I know.</div>Eu sei, conheço<br><br>
+    <div class="text-blue">I know how to speak English.</div>Eu sei falar inglês.<br><br>
+    <div class="text-blue">I know how to go downtown.</div>Eu sei ir ao centro.<br><br>
+    <div class="text-blue">I know how to play chess.</div>Eu sei jogar xadrez.<br><br>
+    <div class="text-blue">I know how to spell your name.</div>Eu sei escrever seu nome.<br><br>
+    <div class="text-blue">I know how to work on the computer.</div>Eu sei trabalhar no computador.<br><br>
+  </div>
+</div>
+
+
+  
+<!-- Frases: I Have / Do You Know -->
+<div class="divider"></div>
+<div class="grid-2 equal-split">
+  <!-- Coluna I Have -->
+  <div class="card">
+    <div class="text-blue">I have sixteen cousins.</div>Eu tenho 16 primos.<br><br>
+    <div class="text-blue">I have one hundred books.</div>Eu tenho cem livros.<br><br>
+    <div class="text-blue">I have two hundred and fifty CDs.</div>Eu tenho 250 CDs.<br><br>
+  </div>
+
+  <!-- Coluna Do You Know -->
+  <div class="card">
+    <div class="text-blue">Do you know my grandfather?</div>Você conhece meu avô?<br><br>
+    <div class="text-blue">Do you know my grandparents?</div>Você conhece meus avós?<br><br>
+    <div class="text-blue">Do you know my teacher?</div>Você conhece meu professor?<br><br>
+  </div>
+</div>
+
+
+
+<!-- Frases: Family Members / Grandchildren -->
+<div class="divider"></div>
+<div class="grid-2 equal-split">
+  <!-- Coluna Brothers and Sisters -->
+  <div class="card">
+    <div class="text-blue">How many brothers and sisters do you have?</div>Quantos irmãos e irmãs você tem?<br><br>
+    <div class="text-blue">I have two brothers.</div>Eu tenho dois irmãos.<br><br>
+    <div class="text-blue">I have one sister.</div>Eu tenho uma irmã.<br><br>
+  </div>
+
+  <!-- Coluna Grandchildren -->
+  <div class="card">
+    <div class="text-blue">How many grandchildren do you have?</div>Quantos netos você tem?<br><br>
+    <div class="text-blue">I have seven grandsons.</div>Eu tenho sete netos.<br><br>
+    <div class="text-blue">I have five granddaughters.</div>Eu tenho cinco netas.<br><br>
+  </div>
+</div>
+
+
+
+<!-- Verbs -->
+<div class="divider"></div>
+<div class="section-title"><h2>Verbs</h2></div>
+<div class="grid-2 equal-split verbs-section">
+  <div class="card verb-card">
+    <div class="verb-title text-blue" onclick="playSegment(109, 110)">to help</div>
+    <div class="verb-translation">ajudar</div>
+  </div>
+  <div class="card verb-card">
+    <div class="verb-title text-blue" onclick="playSegment(111, 112)">to know</div>
+    <div class="verb-translation">saber | conhecer</div>
+  </div>
+</div>
+
+<!-- Vocabulary -->
+<div class="divider"></div>
+<div class="section-title"><h2>Vocabulary</h2></div>
+<div class="vocab-section">
+  <div class="card vocab-card"><div class="text-blue">grandfather</div><div class="translation">avô</div></div>
+  <div class="card vocab-card"><div class="text-blue">grandmother</div><div class="translation">avó</div></div>
+  <div class="card vocab-card"><div class="text-blue">grandparents</div><div class="translation">avós</div></div>
+  <div class="card vocab-card"><div class="text-blue">grandson</div><div class="translation">neto</div></div>
+  <div class="card vocab-card"><div class="text-blue">granddaughter</div><div class="translation">neta</div></div>
+  <div class="card vocab-card"><div class="text-blue">grandchildren</div><div class="translation">netos</div></div>
+  <div class="card vocab-card"><div class="text-blue">cousin</div><div class="translation">primo, prima</div></div>
+  <div class="card vocab-card"><div class="text-blue">relative</div><div class="translation">parente</div></div>
+  <div class="card vocab-card"><div class="text-blue">beach</div><div class="translation">praia</div></div>
+  <div class="card vocab-card"><div class="text-blue">cookie</div><div class="translation">bolacha</div></div>
+  <div class="card vocab-card"><div class="text-blue">cake</div><div class="translation">bolo</div></div>
+  <div class="card vocab-card"><div class="text-blue">popcorn</div><div class="translation">pipoca</div></div>
+  <div class="card vocab-card"><div class="text-blue">slice</div><div class="translation">fatia</div></div>
+  <div class="card vocab-card"><div class="text-blue">piece</div><div class="translation">pedaço</div></div>
+</div>
+
+
+<!-- Expressions -->
+<div class="divider"></div>
+<div class="section-title"><h2>Expressions</h2></div>
+<div class="expressions-section">
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(145, 147)">how many</div><div class="translation">Quantos</div></div>
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(147, 149)">about</div><div class="translation"> sobre | mais ou menos | aproximadamente</div></div>
+</div>
+
+
+<!-- Grammar: Numbers and Expressions -->
+<div class="divider"></div>
+<div class="section-title"><h2>Grammar</h2></div>
+
+<!-- Continuação dos números -->
+<div class="numbers-section">
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(398, 399)">21 twenty-one</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(399, 400)">22 twenty-two</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(400, 401)">23 twenty-three</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(401, 402)">24 twenty-four</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(402, 403)">25 twenty-five</div></div>
+
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(403, 404)">26 twenty-six</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(404, 405)">27 twenty-seven</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(405, 406)">28 twenty-eight</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(406, 407)">29 twenty-nine</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(407, 408)">30 thirty</div></div>
+
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(408, 409)">40 forty</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(409, 410)">50 fifty</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(410, 411)">60 sixty</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(411, 412)">70 seventy</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(412, 413)">80 eighty</div></div>
+
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(413, 414)">90 ninety</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(414, 415)">100 one hundred</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(415, 416)">200 two hundred</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(416, 417)">1,000 one thousand</div></div>
+</div>
+
+<div class="divider"></div>
+<!-- Expressões -->
+<div class="expressions-section">
+  <div class="card verb-card">
+    <div class="text-blue" onclick="playSegment(383, 385)">I know how to speak German.</div>
+    <div class="verb-translation"> Eu sei falar alemão.</div>
+  </div>
+ 
+  <div class="card verb-card">
+    <div class="text-blue" onclick="playSegment(395, 397)">I know how to go downtown.</div>
+    <div class="verb-translation">Eu sei ir ao centro.</div>
+  </div>
+</div>
+
+
+<div class="divider"></div>
+<div class="section-title"><h2>Listening</h2></div>  
+<div class="listening-row">
+  <div class="card">
+    <button onclick="playSegment(246, 252)">▶️ Ouvir</button>
+    <button onclick="toggleText(this)">👁️ Exibir</button>
+    <span class="hidden-text">I don’t know how to speak Chinese.</span>
+  </div>
+  <div class="card">
+    <button onclick="playSegment(252, 257)">▶️ Ouvir</button>
+    <button onclick="toggleText(this)">👁️ Exibir</button>
+    <span class="hidden-text">How many cousins do you have?</span>
+  </div>
+  <div class="card">
+    <button onclick="playSegment(257, 263)">▶️ Ouvir</button>
+    <button onclick="toggleText(this)">👁️ Exibir</button>
+    <span class="hidden-text">Do you prefer to eat chocolate or cookies?</span>
+  </div>
+  <div class="card">
+    <button onclick="playSegment(263, 268)">▶️ Ouvir</button>
+    <button onclick="toggleText(this)">👁️ Exibir</button>
+    <span class="hidden-text">Do you know how to go to the beach?</span>
+  </div>
+  <div class="card">
+    <button onclick="playSegment(268, 278)">▶️ Ouvir</button>
+    <button onclick="toggleText(this)">👁️ Exibir</button>
+    <span class="hidden-text">I have about 50 CDs at home.</span>
+  </div>
+</div>
+
+  
+  <div style="text-align:center; margin-bottom: 30px;">
+    <div id="player"></div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="section-title"><h2>Vídeo Principal</h2></div>
+  
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/PmQlCRGwMtk"
+            frameborder="0"
+            allowfullscreen>
+    </iframe>
+  </div> 
+
+<!-- Player invisível do YouTube -->
+<div id="player" style="display: none;"></div>
+
+<script>
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '0',
+      width: '0',
+      videoId: 'PmQlCRGwMtk'
+    });
+  }
+
+  const tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  document.body.appendChild(tag);
+</script>
+
+<!-- Seu JS externo com funções reutilizáveis -->
+<script src="../js/lesson-script.js"></script>
+
+</body>
+</html>

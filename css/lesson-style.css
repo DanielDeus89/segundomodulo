@@ -130,6 +130,18 @@ h2 {
 
 /* === VOCABULARY + EXPRESSIONS === */
 .vocab-section,
+.vocab-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* fixo: 4 por linha */
+  gap: 16px;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+}
+
+
+/* === VOCABULARY + EXPRESSIONS === */
+.expressions-section,
 .expressions-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -222,8 +234,16 @@ button#theme-toggle {
 
 
 /* === MOBILE === */
+@media (max-width: 992px) {
+  .vocab-section,
+  .expressions-section {
+    grid-template-columns: repeat(2, 1fr); /* 2 por linha no tablet/celular */
+  }
+}
+
 @media (max-width: 600px) {
-  h1 {
-    font-size: 2em;
+  .vocab-section,
+  .expressions-section {
+    grid-template-columns: 1fr; /* 1 por linha no celular pequeno */
   }
 }
