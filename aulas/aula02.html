@@ -179,39 +179,39 @@
 
 
 
-  <div class="divider"></div>
-  <div class="section-title"><h2>Listening</h2></div>  
-  <div class="listening-row">
-    <div class="card">
-      <button onclick="playSegment(171, 175)">▶️ Ouvir</button>
-      <button onclick="toggleText(this)">👁️ Exibir</button>
-      <span class="hidden-text">1. I drink coffee and milk.</span>
-    </div>
-    <div class="card">
-      <button onclick="playSegment(175, 180)">▶️ Ouvir</button>
-      <button onclick="toggleText(this)">👁️ Exibir</button>
-      <span class="hidden-text">2. You eat bread and cheese.</span>
-    </div>
-    <div class="card">
-      <button onclick="playSegment(180, 185)">▶️ Ouvir</button>
-      <button onclick="toggleText(this)">👁️ Exibir</button>
-      <span class="hidden-text">3. You eat fish and you drink soda.</span>
-    </div>
-    <div class="card">
-      <button onclick="playSegment(185, 191)">▶️ Ouvir</button>
-      <button onclick="toggleText(this)">👁️ Exibir</button>
-      <span class="hidden-text">4. I drink juice and I eat bread and ham.</span>
-    </div>
-    <div class="card">
-      <button onclick="playSegment(191, 196)">▶️ Ouvir</button>
-      <button onclick="toggleText(this)">👁️ Exibir</button>
-      <span class="hidden-text">5. I eat bread and meat.</span>
-    </div>
+ <div class="divider"></div>
+<div class="section-title"><h2>Listening</h2></div>  
+<div class="listening-row">
+  <div class="card">
+    <button onclick="playSegment(241, 249)">▶️ Ouvir</button>
+    <button onclick="toggleText(this)">👁️ Exibir</button>
+    <span class="hidden-text">I don't speak Portuguese with my mother.</span>
   </div>
-  
-  <div style="text-align:center; margin-bottom: 30px;">
-    <div id="player"></div>
+  <div class="card">
+    <button onclick="playSegment(249, 254)">▶️ Ouvir</button>
+    <button onclick="toggleText(this)">👁️ Exibir</button>
+    <span class="hidden-text">I study French with my friends.</span>
   </div>
+  <div class="card">
+    <button onclick="playSegment(254, 260)">▶️ Ouvir</button>
+    <button onclick="toggleText(this)">👁️ Exibir</button>
+    <span class="hidden-text">I don't speak Spanish with my father.</span>
+  </div>
+  <div class="card">
+    <button onclick="playSegment(260, 266)">▶️ Ouvir</button>
+    <button onclick="toggleText(this)">👁️ Exibir</button>
+    <span class="hidden-text">I don't drink coffee and milk in the morning.</span>
+  </div>
+  <div class="card">
+    <button onclick="playSegment(266, 275)">▶️ Ouvir</button>
+    <button onclick="toggleText(this)">👁️ Exibir</button>
+    <span class="hidden-text">I don't eat cheese and I don't drink milk.</span>
+  </div>
+</div>
+<div style="text-align:center; margin-bottom: 30px;">
+  <div id="player"></div>
+</div>
+
 
   <div class="divider"></div>
   <div class="section-title"><h2>Vídeo Principal</h2></div>
@@ -221,55 +221,27 @@
             frameborder="0"
             allowfullscreen>
     </iframe>
-  </div>
-  
-  <script>
-    let player;
+  </div> 
 
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        height: '0',
-        width: '0',
-        videoId: 'pqYLxTyQ4cY'
-      });
-    }
+<!-- Player invisível do YouTube -->
+<div id="player" style="display: none;"></div>
 
-    function playSegment(start, end) {
-      const button = event.target.closest('button') || event.target;
-      if (player && player.seekTo) {
-        player.seekTo(start);
-        player.playVideo();
-        const originalText = button.textContent;
-        button.textContent = '⏸️ Tocando...';
-        button.disabled = true;
-        setTimeout(() => {
-          player.pauseVideo();
-          button.textContent = originalText;
-          button.disabled = false;
-        }, (end - start) * 1000);
-      } else {
-        alert("O player ainda não está pronto. Tente novamente em alguns segundos.");
-      }
-    }
+<script>
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '0',
+      width: '0',
+      videoId: 'pqYLxTyQ4cY'
+    });
+  }
 
-    function playFromData(el) {
-      const start = parseFloat(el.dataset.start);
-      const end = parseFloat(el.dataset.end);
-      if (!isNaN(start) && !isNaN(end)) {
-        player.seekTo(start);
-        player.playVideo();
-        el.classList.add('playing');
-        setTimeout(() => {
-          player.pauseVideo();
-          el.classList.remove('playing');
-        }, (end - start) * 1000);
-      }
-    }
+  const tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  document.body.appendChild(tag);
+</script>
 
-    // Load YouTube API
-    const tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    document.body.appendChild(tag);
-  </script>
+<!-- Seu JS externo com funções reutilizáveis -->
+<script src="../js/lesson-script.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 13 - English Class</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/lesson-style.css">
+</head>
+
+<body class="dark">
+  <button id="theme-toggle">☀️ Light Mode</button>
+
+  <h1>Lesson 13</h1>
+  <p style="text-align:center; font-style:italic; color:#60a5fa; margin-top: -10px;">
+    💡 Clique nas frases em azul para ouvir a pronúncia em inglês.
+  </p>
+
+<!-- Frases: I Buy / I Sell -->
+<div class="divider"></div>
+<div class="grid-2 equal-split">
+  <!-- Coluna I Buy -->
+  <div class="card">
+    <div class="text-blue" onclick="playSegment(3, 5)">I buy.</div>Eu compro<br><br>
+    <div class="text-blue" onclick="playSegment(200, 203)">I want to buy a house.</div>Eu quero comprar uma casa.<br><br>
+    <div class="text-blue" onclick="playSegment(204, 207)">I want to buy a new house.</div>Eu quero comprar uma casa nova.<br><br>
+    <div class="text-blue" onclick="playSegment(208, 211)">I want to buy a car.</div>Eu quero comprar um carro.<br><br>
+    <div class="text-blue" onclick="playSegment(212, 215)">I want to buy a new car.</div>Eu quero comprar um carro novo.<br><br>
+    <div class="text-blue" onclick="playSegment(216, 219)">I want to buy a dress.</div>Eu quero comprar um vestido.<br><br>
+    <div class="text-blue" onclick="playSegment(220, 223)">I want to buy a new dress.</div>Eu quero comprar um vestido novo.<br><br>
+  </div>
+
+  <!-- Coluna I Sell -->
+  <div class="card">
+    <div class="text-blue" onclick="playSegment(224, 227)">I sell.</div>Eu vendo.<br><br>
+    <div class="text-blue" onclick="playSegment(224, 227)">I want to sell my bicycle.</div>Eu quero vender minha bicicleta.<br><br>
+    <div class="text-blue" onclick="playSegment(228, 231)">I need to sell my store.</div>Eu preciso vender minha loja.<br><br>
+    <div class="text-blue" onclick="playSegment(232, 235)">I have to sell my house.</div>Eu tenho que vender minha casa.<br><br>
+    <div class="text-blue" onclick="playSegment(236, 239)">I need to sell my car.</div>Eu preciso vender meu carro.<br><br>
+    <div class="text-blue" onclick="playSegment(240, 243)">I want to sell my CDs.</div>Eu quero vender meus CDs.<br><br>
+    <div class="text-blue" onclick="playSegment(244, 247)">I need to sell my book.</div>Eu preciso vender meu livro.<br><br>
+  </div>
+</div>
+
+  
+<!-- Perguntas: Do you need to buy...? / Do you want to sell...? -->
+<div class="divider"></div>
+<div class="grid-2 equal-split">
+  <div class="card">
+    <div class="text-blue" onclick="playSegment(250, 253)">Do you need to buy a coat?</div>Você precisa comprar um casaco?<br><br>
+    <div class="text-blue" onclick="playSegment(254, 257)">Do you need to buy a new shirt?</div>Você precisa comprar uma camisa nova?<br><br>
+    <div class="text-blue" onclick="playSegment(258, 261)">Do you need to buy a T-shirt?</div>Você precisa comprar uma camiseta?<br><br>
+    <div class="text-blue" onclick="playSegment(262, 265)">Do you need to buy a pen?</div>Você precisa comprar uma caneta?<br><br>
+  </div>
+  <div class="card">
+    <div class="text-blue" onclick="playSegment(266, 269)">Do you want to sell your car?</div>Você quer vender seu carro?<br><br>
+    <div class="text-blue" onclick="playSegment(270, 273)">Do you want to sell your house?</div>Você quer vender sua casa?<br><br>
+    <div class="text-blue" onclick="playSegment(274, 277)">Do you want to sell your bicycle?</div>Você quer vender sua bicicleta?<br><br>
+    <div class="text-blue" onclick="playSegment(278, 281)">Do you want to sell your piano?</div>Você quer vender seu piano?<br><br>
+  </div>
+</div>
+
+
+<!-- Frases: Numbers / Greetings -->
+<div class="divider"></div>
+<div class="grid-2 equal-split">
+  <div class="card">
+    <div class="text-blue" onclick="playSegment(282, 285)">Numbers</div>Números<br><br>
+    <div class="text-blue" onclick="playSegment(282, 285)">I have one brother and two sisters.</div>Eu tenho um irmão e duas irmãs.<br><br>
+    <div class="text-blue" onclick="playSegment(286, 289)">I have three brothers.</div>Eu tenho três irmãos.<br><br>
+    <div class="text-blue" onclick="playSegment(290, 293)">I need to buy two books for my son.</div>Eu preciso comprar dois livros para meu filho.<br><br>
+  </div>
+  <div class="card">
+    <div class="text-blue" onclick="playSegment(294, 296)">Greetings</div>Saudações<br><br>
+    <div class="text-blue" onclick="playSegment(294, 296)">My name is Sally.</div>Meu nome é Sally.<br><br>
+    <div class="text-blue" onclick="playSegment(297, 299)">Nice to meet you.</div>Muito prazer.<br><br>
+    <div class="text-blue" onclick="playSegment(300, 302)">Nice to meet you, too.</div>O prazer é meu.<br><br>
+  </div>
+</div>
+
+
+<!-- Verbs -->
+<div class="divider"></div>
+<div class="section-title"><h2>Verbs</h2></div>
+<div class="grid-2 equal-split verbs-section">
+  <div class="card verb-card">
+    <div class="verb-title text-blue" onclick="playSegment(109, 110)">to buy</div>
+    <div class="verb-translation">comprar</div>
+  </div>
+  <div class="card verb-card">
+    <div class="verb-title text-blue" onclick="playSegment(111, 112)">to sell</div>
+    <div class="verb-translation">vender</div>
+  </div>
+</div>
+
+<!-- Vocabulary -->
+<div class="divider"></div>
+<div class="section-title"><h2>Vocabulary</h2></div>
+<div class="vocab-section">
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(310, 312)">money</div><div class="translation">dinheiro</div></div>
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(313, 315)">ice cream</div><div class="translation">sorvete</div></div>
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(316, 318)">candy</div><div class="translation">bala | doce</div></div>
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(319, 321)">chocolate</div><div class="translation">chocolate</div></div>
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(322, 324)">bubble gum</div><div class="translation">chiclete</div></div>
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(325, 327)">pencil</div><div class="translation">lápis</div></div>
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(328, 330)">pen</div><div class="translation">caneta</div></div>
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(331, 333)">dress</div><div class="translation">vestido</div></div>
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(334, 336)">blouse</div><div class="translation">blusa</div></div>
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(337, 339)">skirt</div><div class="translation">saia</div></div>
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(340, 342)">coat</div><div class="translation">casaco</div></div>
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(343, 345)">shirt</div><div class="translation">camisa</div></div>
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(346, 348)">T-shirt</div><div class="translation">camiseta</div></div>
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(349, 351)">pants</div><div class="translation">calça</div></div>
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(352, 354)">shoes</div><div class="translation">sapatos</div></div>
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(355, 357)">boots</div><div class="translation">botas</div></div>
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(358, 360)">apartment</div><div class="translation">apartamento</div></div>
+</div>
+
+
+<!-- Expressions -->
+<div class="divider"></div>
+<div class="section-title"><h2>Expressions</h2></div>
+<div class="expressions-section">
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(145, 147)">Nice to meet you.</div><div class="translation">Muito prazer.</div></div>
+  <div class="card vocab-card"><div class="text-blue" onclick="playSegment(147, 149)">Nice to meet you, too.</div><div class="translation">O prazer é meu.</div></div>
+</div>
+
+
+<!-- Grammar: Numbers and Expressions -->
+<div class="divider"></div>
+<div class="section-title"><h2>Grammar</h2></div>
+
+<!-- Números: 5 por linha -->
+<div class="numbers-section">
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(361, 362)">0 zero</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(362, 363)">1 one</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(363, 364)">2 two</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(364, 365)">3 three</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(365, 366)">4 four</div></div>
+
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(366, 367)">5 five</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(367, 368)">6 six</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(368, 369)">7 seven</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(369, 370)">8 eight</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(370, 371)">9 nine</div></div>
+
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(371, 372)">10 ten</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(372, 373)">11 eleven</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(373, 374)">12 twelve</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(374, 375)">13 thirteen</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(375, 376)">14 fourteen</div></div>
+
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(376, 377)">15 fifteen</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(377, 378)">16 sixteen</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(378, 379)">17 seventeen</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(379, 380)">18 eighteen</div></div>
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(380, 381)">19 nineteen</div></div>
+
+  <div class="card verb-card"><div class="text-blue" onclick="playSegment(381, 382)">20 twenty</div></div>
+</div>
+<div class="divider"></div>
+
+<!-- Expressões -->
+<div class="grid-2 equal-split verbs-section">
+  <div class="card verb-card">
+    <div class="text-blue" onclick="playSegment(383, 385)">to buy for</div>
+    <div class="verb-translation">comprar para</div>
+  </div>
+  <div class="card verb-card">
+    <div class="text-blue" onclick="playSegment(386, 388)">to sell to</div>
+    <div class="verb-translation">vender para</div>
+  </div>
+  <div class="card verb-card">
+    <div class="text-blue" onclick="playSegment(389, 391)">some ice cream</div>
+    <div class="verb-translation">um pouco de sorvete</div>
+  </div>
+  <div class="card verb-card">
+    <div class="text-blue" onclick="playSegment(392, 394)">some candy</div>
+    <div class="verb-translation">alguns doces</div>
+  </div>
+  <div class="card verb-card">
+    <div class="text-blue" onclick="playSegment(395, 397)">some chocolate</div>
+    <div class="verb-translation">um pouco de chocolate</div>
+  </div>
+</div>
+
+
+
+
+<div class="divider"></div>
+<div class="section-title"><h2>Listening</h2></div>  
+<div class="listening-row">
+  <div class="card">
+    <button onclick="playSegment(277, 285)">▶️ Ouvir</button>
+    <button onclick="toggleText(this)">👁️ Exibir</button>
+    <span class="hidden-text">1. I have to sell my house. I need money.</span>
+  </div>
+  <div class="card">
+    <button onclick="playSegment(285, 289)">▶️ Ouvir</button>
+    <button onclick="toggleText(this)">👁️ Exibir</button>
+    <span class="hidden-text">2. I want to buy two T-shirts.</span>
+  </div>
+  <div class="card">
+    <button onclick="playSegment(289, 296)">▶️ Ouvir</button>
+    <button onclick="toggleText(this)">👁️ Exibir</button>
+    <span class="hidden-text">3. What do you want to buy for your wife?</span>
+  </div>
+  <div class="card">
+    <button onclick="playSegment(296, 301)">▶️ Ouvir</button>
+    <button onclick="toggleText(this)">👁️ Exibir</button>
+    <span class="hidden-text">4. I like chocolate ice cream very much.</span>
+  </div>
+  <div class="card">
+    <button onclick="playSegment(301, 309)">▶️ Ouvir</button>
+    <button onclick="toggleText(this)">👁️ Exibir</button>
+    <span class="hidden-text">5. Do you have a house or an apartment?</span>
+  </div>
+</div>
+
+  
+  <div style="text-align:center; margin-bottom: 30px;">
+    <div id="player"></div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="section-title"><h2>Vídeo Principal</h2></div>
+  
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/Y3nJq_JOapE"
+            frameborder="0"
+            allowfullscreen>
+    </iframe>
+  </div> 
+
+<!-- Player invisível do YouTube -->
+<div id="player" style="display: none;"></div>
+
+<script>
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '0',
+      width: '0',
+      videoId: 'Y3nJq_JOapE'
+    });
+  }
+
+  const tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  document.body.appendChild(tag);
+</script>
+
+<!-- Seu JS externo com funções reutilizáveis -->
+<script src="../js/lesson-script.js"></script>
+
+</body>
+</html>

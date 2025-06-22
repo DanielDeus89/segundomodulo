@@ -175,7 +175,7 @@
     <div id="player"></div>
   </div>
 
-  <div class="divider"></div>
+<div class="divider"></div>
   <div class="section-title"><h2>Vídeo Principal</h2></div>
   
   <div class="video-container">
@@ -185,8 +185,25 @@
     </iframe>
   </div> 
 
-     <script src="../js/lesson-script.js"></script>
-  <script src="https://www.youtube.com/iframe_api"></script>
-  </script>
+<!-- Player invisível do YouTube -->
+<div id="player" style="display: none;"></div>
+
+<script>
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '0',
+      width: '0',
+      videoId: '9xOqf7P6jYQ'
+    });
+  }
+
+  const tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  document.body.appendChild(tag);
+</script>
+
+<!-- Seu JS externo com funções reutilizáveis -->
+<script src="../js/lesson-script.js"></script>
+
 </body>
 </html>

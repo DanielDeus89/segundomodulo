@@ -1,12 +1,4 @@
-let player;
-
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('player', {
-    height: '0',
-    width: '0',
-    videoId: '9xOqf7P6jYQ'
-  });
-}
+let player; // variável global usada pela função no HTML
 
 function playSegment(start, end) {
   const button = event.target.closest('button') || event.target;
@@ -42,5 +34,11 @@ function playFromData(el) {
 
 function toggleText(button) {
   const span = button.nextElementSibling;
-  span.classList.toggle('hidden-text');
+  if (span.classList.contains('hidden-text')) {
+    span.classList.remove('hidden-text');
+    button.textContent = '🙈 Ocultar';
+  } else {
+    span.classList.add('hidden-text');
+    button.textContent = '👁️ Exibir';
+  }
 }
