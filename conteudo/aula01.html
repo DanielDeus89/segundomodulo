@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lesson 01 - English Class</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <h1 id="lessonTitle">Lesson</h1>
+  <p class="info-text">💡 Clique nas frases em azul para ouvir a pronúncia em inglês.</p>
+
+  <!-- Cards carregados dinamicamente -->
+  <div class="card-stack" id="cardStack"></div>
+
+  <div class="divider"></div>
+
+  <div class="stack-controls">
+    <button onclick="prevCard()">⬅️ Anterior</button>
+    <button id="nextBtn" onclick="nextCard()" disabled>Próximo ➡️</button>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="video-container">
+    <div id="player"></div>
+  </div>
+
+  <div style="margin: 20px 0;">
+    <label style="font-weight: bold;">
+      <input type="checkbox" id="devCheckbox" onchange="toggleDevMode()" />
+      🛠️ Ativar Modo Desenvolvedor
+    </label>
+  </div>
+
+  <!-- YouTube Iframe API -->
+  <script>
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.head.appendChild(tag);
+  </script>
+
+ <script src="/js/player.js"></script>
+  <script src="/js/engine.js"></script>
+  <script src="/js/lesson01.js"></script>
+
+</body>
+</html>
