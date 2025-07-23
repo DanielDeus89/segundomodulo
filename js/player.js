@@ -108,3 +108,20 @@ function showCard(index) {
 window.onload = () => {
   showCard(currentIndex);
 };
+
+
+function playSegment(start, end) {
+  if (!player || typeof player.seekTo !== 'function') {
+    console.warn("Player não está pronto ainda.");
+    return;
+  }
+
+  player.seekTo(start);
+  player.playVideo();
+
+  setTimeout(() => {
+    if (player.getPlayerState() === YT.PlayerState.PLAYING) {
+      player.pauseVideo();
+    }
+  }, (end - start) * 1000);
+}

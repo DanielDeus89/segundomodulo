@@ -3,57 +3,58 @@ const currentVideoId = "9xOqf7P6jYQ";
 
 const timeRanges = [
   { start: 0, end: 17 },
-  { start: 17, end: 36 },
-  { start: 36, end: 50 },
+  { start: 17, end: 35 },
+  { start: 35, end: 50 },
   { start: 50, end: 66 },
   { start: 66, end: 85 },
-  { start: 85, end: 107 },
-  { start: 107, end: 107 }
+  { start: 17, end: 107 },  
+  { start: 17, end: 107 }
 ];
 
 const lessonCards = [
   {
-    title: "Verbs",
-    columns: [
-      [["to do, did", "fazer"], ["to pay, paid", "pagar"]],
-      [["to put, put", "pôr, colocar"], ["going to", "futuro"]]
-    ]
-  },
-    {
-    title: "Vocabulary",
+    title: "Practice Sentences",
     columns: [
       [
-        ["internet", "internet"],
-        ["virus", "vírus"],
-        ["paper", "jornal, papel"],
-        ["newsstand", "banca de jornais"],
-        ["nightstand", "criado mudo"],
-        ["ready", "pronto"],
-        ["Brazilian", "brasileiro"],
-        ["American", "americano"],
-        ["slow", "lento, devagar"],
-        ["same", "mesmo"]
+        ["I drink.", "Eu bebo."],
+        ["You drink.", "Você bebe."],
+        ["I drink water.", "Eu bebo água."]
       ],
       [
-        ["on", "sobre, em cima"],
-        ["floor", "chão, piso"],
-        ["weather", "tempo (clima)"],
-        ["snow", "neve"],
-        ["rain", "chuva"],
-        ["fog", "neblina"],
-        ["cloud", "nuvem"],
-        ["sun", "sol"],
-        ["beautiful", "bonito"],
-        ["forgetful", "esquecido"]
+        ["You drink juice.", "Você bebe suco."],
+        ["I drink coffee.", "Eu bebo café."],
+        ["You drink milk.", "Você bebe leite."]
       ]
     ]
   },
- {
-    title: "Expressions",
+    {
+    title: "Practice Sentences",
     columns: [
-      [["to go to bed", "ir dormir, deitar-se"]],
-      [["to access the internet", "acessar a internet"]],
-      [["great", "ótimo"], ["finally", "finalmente"]]
+      [
+        ["I eat.", "Eu como."],
+        ["You eat.", "Você come."],
+        ["I eat bread.", "Eu como pão."]
+      ],
+      [
+        ["You eat cheese.", "Você come queijo."],
+        ["I eat fish.", "Eu como peixe."],
+        ["You eat meat.", "Você come carne."]
+      ]
+    ]
+  },
+  {
+    title: "Practice Sentences",
+    columns: [
+      [
+        ["I drink coffee and milk.", "Eu bebo café e leite."],
+        ["I drink water and juice.", "Eu bebo água e suco."],
+        ["I drink tea and soda.", "Eu bebo chá e refrigerante."]
+      ],
+      [
+        ["I eat bread and ham.", "Eu como pão e presunto."],
+        ["I eat bread and cheese.", "Eu como pão e queijo."],
+        ["I eat fish and meat.", "Eu como peixe e carne."]
+      ]
     ]
   },
   {
@@ -130,8 +131,23 @@ const lessonCards = [
         ["You eat", "Você come"]
       ]
     ]
-  }
+  },
+
+  {
+  title: "Listening Practice",
+  type: "listening",
+  segments: [
+    { text: "1. I drink coffee and milk.", start: 171, end: 175 },
+    { text: "2. You eat bread and cheese.", start: 175, end: 180 },
+    { text: "3. You eat fish and you drink soda.", start: 180, end: 185 },
+    { text: "4. I drink juice and I eat bread and ham.", start: 185, end: 191 },
+    { text: "5. I eat bread and meat.", start: 191, end: 196 }
+  ]
+}
+
 ];
+
+
 
 
 function loadLessonContent() {
@@ -144,6 +160,7 @@ function loadLessonContent() {
     div.className = "card";
     if (index === 0) div.classList.add("active");
 
+    // Título
     if (card.title) {
       const h2 = document.createElement("h2");
       h2.className = "section-title";
@@ -151,6 +168,41 @@ function loadLessonContent() {
       div.appendChild(h2);
     }
 
+    // Se for card de Listening
+    if (card.type === "listening" && Array.isArray(card.segments)) {
+      const row = document.createElement("div");
+      row.className = "listening-row";
+
+      card.segments.forEach((segment) => {
+        const cardDiv = document.createElement("div");
+        cardDiv.className = "listening-card";
+
+        const playBtn = document.createElement("button");
+        playBtn.textContent = "▶️ Ouvir";
+        playBtn.onclick = () => playSegment(segment.start, segment.end);
+
+        const toggleBtn = document.createElement("button");
+        toggleBtn.textContent = "👁️ Exibir";
+        toggleBtn.onclick = function () {
+          toggleText(this);
+        };
+
+        const span = document.createElement("span");
+        span.className = "hidden-text";
+        span.textContent = segment.text;
+
+        cardDiv.appendChild(playBtn);
+        cardDiv.appendChild(toggleBtn);
+        cardDiv.appendChild(span);
+        row.appendChild(cardDiv);
+      });
+
+      div.appendChild(row);
+      stack.appendChild(div);
+      return; // evita processar abaixo
+    }
+
+    // Cards normais
     const grid = document.createElement("div");
     grid.className = "grid2";
 
@@ -176,3 +228,9 @@ function loadLessonContent() {
 window.onload = () => {
   loadLessonContent();
 };
+
+function toggleText(button) {
+  const card = button.closest(".listening-card");
+  const isNowVisible = card.classList.toggle("show-text");
+  button.textContent = isNowVisible ? "🙈 Ocultar" : "👁️ Exibir";
+}
