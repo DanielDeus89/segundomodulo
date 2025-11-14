@@ -109,9 +109,7 @@ const lessonCards = [
       ["When did you learn how to drive?", ""],
       ["She learned how to cook very well.", ""],
       ["Did he learn how to speak Chinese?", ""],
-      ["Are they learning Japanese?", ""]
-    ],
-    [
+      ["Are they learning Japanese?", ""],
       ["They sang Christmas carols at school.", ""],
       ["Did anybody sing at the party?", ""],
       ["What song are they singing?", ""],
@@ -126,15 +124,13 @@ const lessonCards = [
       ["They had to wait for three hours.", ""],
       ["We didn't wait for them.", ""],
       ["Did he wait for you?", ""],
-      ["Who's waiting for us?", ""]
-    ],
-    [
-      ["How old are you?", ""],
+      ["Who's waiting for us?", ""],
+            ["How old are you?", ""],
       ["I'm thirty-two years old.", ""],
       ["How old is he?", ""],
       ["He's eighteen years old.", ""]
-    ]
-  ]
+    ]   ]
+  
 },
 {
   "title": "Phrases",
@@ -143,14 +139,14 @@ const lessonCards = [
       ["I started working in 2005.", ""],
       ["I started studying in 2009.", ""],
       ["They went to China in 2006.", ""],
-      ["She opened the store in 1998.", ""]
-    ],
-    [
-      ["The hospital is behind the mall.", ""],
+      ["She opened the store in 1998.", ""],
+            ["The hospital is behind the mall.", ""],
       ["They are waiting for us in front of the store.", ""],
       ["Are you in front of the cafeteria?", ""],
       ["She is behind him.", ""]
-    ]
+    ]  
+
+
   ]
 },
  {
