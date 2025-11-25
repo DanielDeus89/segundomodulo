@@ -218,67 +218,6 @@ const lessonCards = [
     { "text": "4. I don’t know what the matter is with her today.", "start": 1163, "end": 1168 },
     { "text": "5. We would like to go for a walk at the park now.", "start": 1168, "end": 1174 }
   ]
-},
-
-{
-  "title": "Reading & Comprehension",
-  "text": "I will invite some friends to celebrate Jimmy's birthday with a surprise party. I need to get my phone book to call some friends who live far away. After lunch, I will go for a walk in the neighborhood to meet my brother-in-law in front of the public building, where he works. He will fast let the family know about the party. In the evening, I'll put on my blue dress and wait for my dear husband to arrive.",
-  "columns": [
-    [
-      [
-        "I will invite some friends to celebrate Jimmy's birthday with a surprise party. I need to get my phone book to call some friends who live far away. After lunch, I will go for a walk in the neighborhood to meet my brother-in-law in front of the public building, where he works. He will fast let the family know about the party. In the evening, I'll put on my blue dress and wait for my dear husband to arrive.",
-        ""
-      ]
-    ]
-  ]
-},
-{
-  "title": "Reading & Comprehension",
-  "text": "I will invite some friends to celebrate Jimmy's birthday with a surprise party. I need to get my phone book to call some friends who live far away. After lunch, I will go for a walk in the neighborhood to meet my brother-in-law in front of the public building, where he works. He will fast let the family know about the party. In the evening, I'll put on my blue dress and wait for my dear husband to arrive.",
-  "columns": [
-    [
-      ["1. She'll meet her brother-in-law in front of", ""],
-      ["a) the public library.", ""],
-      ["b) the public building.", ""],
-      ["c) her house.", ""]
-    ]
-  ]
-},
-{
-  "title": "Reading & Comprehension",
-  "text": "I will invite some friends to celebrate Jimmy's birthday with a surprise party. I need to get my phone book to call some friends who live far away. After lunch, I will go for a walk in the neighborhood to meet my brother-in-law in front of the public building, where he works. He will fast let the family know about the party. In the evening, I'll put on my blue dress and wait for my dear husband to arrive.",
-  "columns": [
-    [
-      ["2. It will be a", ""],
-      ["a) public party.", ""],
-      ["b) surprise birthday party.", ""],
-      ["c) family reunion.", ""]
-    ]
-  ]
-},
-{
-  "title": "Reading & Comprehension",
-  "text": "I will invite some friends to celebrate Jimmy's birthday with a surprise party. I need to get my phone book to call some friends who live far away. After lunch, I will go for a walk in the neighborhood to meet my brother-in-law in front of the public building, where he works. He will fast let the family know about the party. In the evening, I'll put on my blue dress and wait for my dear husband to arrive.",
-  "columns": [
-    [
-      ["3. Who will be invited to the party?", ""],
-      ["a) Family and friends.", ""],
-      ["b) Co-workers and family.", ""],
-      ["c) Friends and co-workers.", ""]
-    ]
-  ]
-},
-{
-  "title": "Reading & Comprehension",
-  "text": "I will invite some friends to celebrate Jimmy's birthday with a surprise party. I need to get my phone book to call some friends who live far away. After lunch, I will go for a walk in the neighborhood to meet my brother-in-law in front of the public building, where he works. He will fast let the family know about the party. In the evening, I'll put on my blue dress and wait for my dear husband to arrive.",
-  "columns": [
-    [
-      ["4. She will invite people", ""],
-      ["a) by email and a phone call.", ""],
-      ["b) by email and personally.", ""],
-      ["c) with a phone call and personally.", ""]
-    ]
-  ]
 }
 
 

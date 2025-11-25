@@ -5,7 +5,20 @@ const timeRanges = [
 
   { start: 0, end: 130 }, 
   { start: 130, end: 184 }, 
-  { start: 184, end: 184 }, 
+  { start: 184, end: 335 }, 
+  { start: 335, end: 396 }, 
+  { start: 396, end: 529 }, 
+  { start: 529, end: 576 }, 
+  { start: 576, end: 804 }, 
+  { start: 804, end: 895 }, 
+  { start: 895, end: 907 }, 
+  { start: 907, end: 927 }, 
+  { start: 927, end: 943 }, 
+  { start: 943, end: 960 }, 
+  { start: 960, end: 974 }, 
+  { start: 974, end: 988 }, 
+  { start: 988, end: 1001 }, 
+  { start: 1001, end: 99999 }, 
 
 
 ];
@@ -55,19 +68,19 @@ const lessonCards = [
     ]
   },
 {
-  "title": "Ask your Friend",
+  "title": "Questions in Trio",
   "columns": [
     [
-      ["If there is a test today.", ""],
-      ["If he / she usually answers his / her emails on the same day.", ""],
-      ["If digital cameras are expensive nowadays.", ""],
-      ["If he / she has a digital camera.", ""],
-      ["If there is a hospital near his / her house.", ""],
-      ["What he / she did last night.", ""],
-      ["If there is a library in his / her school.", ""],
-      ["If he / she usually asks the teacher many questions.", ""],
-      ["If he / she travels more for leisure or on business.", ""],
-      ["If he / she likes to take pictures.", ""]
+      ["When does he / she usually watch television?", ""],
+      ["How much was his / her cell phone bill last month?", ""],
+      ["How many emails does he / she send every day?", ""],
+      ["Does he / she think Japanese is as difficult as German is?", ""],
+      ["Does his / her father know how to dance?", ""],
+      ["What website does he / she often visit?", ""],
+      ["When did he / she last buy dental floss?", ""],
+      ["Does anybody in his / her family speak English?", ""],
+      ["Does he / she have an iPod?", ""],
+      ["Does he / she speak English at work?", ""]
     ]
   ]
 },
@@ -78,142 +91,160 @@ const lessonCards = [
       ]
     ]
   },
-
-{
-  "title": "Conversation in Trio",
-  "columns": [
-    [
-  
+  {
+    title: "Web Talk",
+    columns: [
+      [ 
+        ["Are you logged in?", ""],
+        ["Not, not yet.", ""],
+      ]
     ]
-  ]
-},
-{
-  "title": "Conversation in Trio",
-  "columns": [
-    [
-  
+  },
+ {
+    title: "Listening - Question 1",
+    columns: [
+      [
+      ["img", "../images/78_1.png"],
+      ["a)", "", 4, 17],
+      ["b)", "", 4, 17],
+      ["c)", "", 4, 17]
+      ]
     ]
-  ]
-},
-{
-  "title": "Conversation in Trio",
-  "columns": [
-    [
- 
+  }, {
+    title: "Listening - Question 2",
+    columns: [
+      [
+      ["img", "../images/78_2.png"],
+      ["a)", "", 4, 17],
+      ["b)", "", 4, 17],
+      ["c)", "", 4, 17]
+      ]
     ]
-  ]
-}, 
-{
-  "title": "Shopping in America",
-  "columns": [
-    [
-      ["Department stores are found in many cities in the United States.", "", 1113, 1118],
-      ["They don't specialize in selling one particular product.", "",1118,1121],
-      ["You can find almost anything there from furniture to appliances, from clothes to jewelry.", "",1121,1128],
-      ["Some of the most famous department stores in the USA are Macy's, J.C. Penny and Sears.", "",1128,1136],
-      ["Most people love visiting department stores because of all the innovative ideas and new products they offer.", "",1136,1144],
-      ["Most department stores in America have a big sale the day after Thanksgiving Day called Black Friday.", "",1144,1153]
+  }, {
+    title: "Listening - Question 3",
+    columns: [
+      [
+      ["img", "../images/78_3.png"],
+      ["a)", "", 4, 17],
+      ["b)", "", 4, 17],
+      ["c)", "", 4, 17]
+      ]
     ]
-  ]
-},
-{
-  "title": "Discussion",
-  "columns": [
-    [
-      ["1", "",1153,1158],
-      ["2", "",1158,1162],
-      ["3", "",1162,1167],
-      ["4", "",1167,1174],
-      ["5", "",1174,1178]
+  }, {
+    title: "Listening - Question 4",
+    columns: [
+      [
+      ["img", "../images/78_4.png"],
+      ["a)", "", 4, 17],
+      ["b)", "", 4, 17],
+      ["c)", "", 4, 17]
+      ]
     ]
-  ]
-},
-{
-  "title": "Listening & Comprehension - Generosity",
-  "columns": [
-    [
-      ["If someone asks you: __________________ pairs of pants do you have?", "", 1188, 1197],
-      ["How many shirts or t-shirts ________________________?", "", 1197, 1201],
-      ["How many dresses or skirts do you have?", "", 1201, 1204],
-      ["How _______________________ answer these questions?", "", 1204, 1207],
-      ["Now, two more questions:", "", 1207, 1209],
-      ["What clothes haven't you not worn in the ________________________?", "", 1209, 1214],
-      ["What do you plan to do with all _________________________ clothes?", "", 1214, 1217],
-      ["Here's an idea for you: take all the clothes you don't wear ________________________, even a shirt you really like, then choose someone or an organization and give all these clothes to ________________________ them more than you do.", "", 1217, 1234],
-      ["This will make you feel ________________________ better and certainly will make the other individual happy.", "", 1234, 1243]
+  }, {
+    title: "Listening - Question 5",
+    columns: [
+      [
+      ["img", "../images/78_5.png"],
+      ["a)", "", 4, 17],
+      ["b)", "", 4, 17],
+      ["c)", "", 4, 17]
+      ]
     ]
-  ]
-},
+  }, {
+    title: "Listening - Question 6",
+    columns: [
+      [
+      ["img", "../images/78_6.png"],
+      ["a)", "", 4, 17],
+      ["b)", "", 4, 17],
+      ["c)", "", 4, 17]
+      ]
+    ]
+  },
 {
-  "title": "Listening",
+  "title": "Listen and Answer",
   "type": "listening",
   "segments": [
-    { "text": "How many pairs of pants do you have that you don’t wear anymore?", "start": 1241, "end": 1246 },
-    { "text": "How many shirts or T-shirts do you have that you don’t wear anymore?", "start": 1246, "end": 1252 },
-    { "text": "How many dresses or skirts do you have that you don’t wear anymore?", "start": 1252, "end": 1258 },
-    { "text": "Do you have a lot of clothes that you don’t wear regularly?", "start": 1258, "end": 1264 },
-    { "text": "Do you usually give your clothes to other people?", "start": 1264, "end": 1268 }
+    { "text": " ", "start": 1001, "end": 1008 },  
+    { "text": " ", "start": 1008, "end": 1012 },  
+    { "text": " ", "start": 1012, "end": 1015 },  
+    { "text": " ", "start": 1015, "end": 1021 },  
+    { "text": " ", "start": 1021, "end": 1026 }  
   ]
 },
-
- {
-  "title": "Conversation in Trio",
+{
+  "title": "Reading & Comprehension",
+  "text": "As soon as Joe stood up to answer the teacher's question, he knew that moment would certainly be important to his mother's decision about giving him the digital camera or not. Mrs. Coller, his literature teacher, asked him easy questions from the text, on the other hand she didn't allow him much time to answer. Fortunately everything went fine and Joe got a good grade, now he can take pictures and have his album collection each time bigger.",
   "columns": [
     [
-      ["Does he know if there was a game last night?", ""],
-      ["Do you know if there was a game last night?", ""],
-      ["There wasn't a game last night.", ""],
-      ["He said there wasn't a game last night.", ""]
+      [
+        "As soon as Joe stood up to answer the teacher's question, he knew that moment would certainly be important to his mother's decision about giving him the digital camera or not. Mrs. Coller, his literature teacher, asked him easy questions from the text, on the other hand she didn't allow him much time to answer. Fortunately everything went fine and Joe got a good grade, now he can take pictures and have his album collection each time bigger.",
+        ""
+      ]
     ]
   ]
 },
 {
-  "title": "Conversation in Trio",
+  "title": "Reading & Comprehension",
+  "text": "I will invite some friends to celebrate Jimmy's birthday with a surprise party. I need to get my phone book to call some friends who live far away. After lunch, I will go for a walk in the neighborhood to meet my brother-in-law in front of the public building, where he works. He will fast let the family know about the party. In the evening, I'll put on my blue dress and wait for my dear husband to arrive.",
   "columns": [
     [
-      ["Did she answer all her emails yesterday?", ""],
-      ["Did you answer all your emails yesterday?", ""],
-      ["Yes, I did. I answered all my emails yesterday.", ""],
-      ["Yes, she did. She answered all her emails yesterday.", ""]
+      ["1. She'll meet her brother-in-law in front of", ""],
+      ["a) the public library.", ""],
+      ["b) the public building.", ""],
+      ["c) her house.", ""]
     ]
   ]
 },
 {
-  "title": "Conversation in Trio",
+  "title": "Reading & Comprehension",
+  "text": "I will invite some friends to celebrate Jimmy's birthday with a surprise party. I need to get my phone book to call some friends who live far away. After lunch, I will go for a walk in the neighborhood to meet my brother-in-law in front of the public building, where he works. He will fast let the family know about the party. In the evening, I'll put on my blue dress and wait for my dear husband to arrive.",
   "columns": [
     [
-      ["Is there anybody who speaks English in his home?", ""],
-      ["Is there anybody who speaks English in your home?", ""],
-      ["Yes, there is. My dad speaks English at home.", ""],
-      ["Yes, there is. His dad speaks English at home.", ""]
+      ["2. It will be a", ""],
+      ["a) public party.", ""],
+      ["b) surprise birthday party.", ""],
+      ["c) family reunion.", ""]
     ]
   ]
 },
 {
-  "title": "Conversation in Trio",
+  "title": "Reading & Comprehension",
+  "text": "I will invite some friends to celebrate Jimmy's birthday with a surprise party. I need to get my phone book to call some friends who live far away. After lunch, I will go for a walk in the neighborhood to meet my brother-in-law in front of the public building, where he works. He will fast let the family know about the party. In the evening, I'll put on my blue dress and wait for my dear husband to arrive.",
   "columns": [
     [
-
+      ["3. Who will be invited to the party?", ""],
+      ["a) Family and friends.", ""],
+      ["b) Co-workers and family.", ""],
+      ["c) Friends and co-workers.", ""]
     ]
   ]
 },
 {
-  "title": "Conversation in Trio",
+  "title": "Reading & Comprehension",
+  "text": "I will invite some friends to celebrate Jimmy's birthday with a surprise party. I need to get my phone book to call some friends who live far away. After lunch, I will go for a walk in the neighborhood to meet my brother-in-law in front of the public building, where he works. He will fast let the family know about the party. In the evening, I'll put on my blue dress and wait for my dear husband to arrive.",
   "columns": [
     [
-
+      ["4. She will invite people", ""],
+      ["a) by email and a phone call.", ""],
+      ["b) by email and personally.", ""],
+      ["c) with a phone call and personally.", ""]
     ]
   ]
 },
 {
-  "title": "Conversation in Trio",
+  "title": "Who is Who?",
   "columns": [
     [
-
+      ["Whose birthday is it this month?", ""],
+      ["Who takes a walk every morning?", ""],
+      ["Who knows how to dance?", ""],
+      ["Who went to Disney?", ""],
+      ["Who has a passport?", ""],
+      ["Who knows how to cook?", ""]
     ]
   ]
-}, 
-
+}
 
 ];
 

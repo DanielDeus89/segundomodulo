@@ -1,9 +1,13 @@
 @echo off
-cd /d C:\segundomodulo
 
+
+echo ============================
 echo Status do Git:
+echo ============================
 git status
-pause
+echo.
+
+timeout /t 5 >nul
 
 echo Adicionando arquivos...
 git add .
@@ -14,5 +18,6 @@ git commit -m "minhas alterações"
 echo Enviando para o GitHub...
 git push
 
+echo.
 echo Operação concluída!
 pause
