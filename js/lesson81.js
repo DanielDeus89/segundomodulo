@@ -2,18 +2,17 @@ const lessonTitle = "Lesson 81";
 const currentVideoId = "8iOcN5wbrBA";
 
 const timeRanges = [
-  { start: 0, end: 30 }, //Verbs
-  { start: 30, end: 101 }, //Vocabulary
-  { start: 101, end: 119 }, //exp
-  { start: 119, end: 210 }, //Grammar
-  { start: 210, end: 255 }, //Frases 1
-  { start: 255, end: 303 }, //Fr2
-  { start: 303, end: 373 }, //Fr3
-  { start: 373, end: 394 }, //Fr4
-  { start: 394, end: 589 }, //Verbs
-  { start: 589, end: 900 }, //vac
-  { start: 900, end: 1002 }, //exp
-  { start: 1002, end: 9999 }, //Gramm  
+  { start: 7, end: 13 }, //Verbs
+  { start: 13, end: 75 }, //Vocabulary
+  { start: 75, end: 110 }, //exp 
+  { start: 110, end: 193 }, //Grammar
+  { start: 193, end: 273 }, //Frases 1
+  { start: 273, end: 356 }, //Fr2
+  { start: 356, end: 394 }, //Fr3
+  { start: 394, end: 543 }, //Verbs
+  { start: 543, end: 802 }, //vac
+  { start: 802, end: 941 }, //exp
+  { start: 941, end: 9999 }, //Gramm  
 ];
 
 const lessonCards = [
@@ -21,13 +20,7 @@ const lessonCards = [
   "title": "Verbs",
   "columns": [
     [
-      ["to run, ran", "correr, administrar"]
-    ],
-    [
-      ["to stop, stopped", "parar"]
-    ],
-    [
-      ["to save, saved", "salvar, economizar, poupar"]
+      ["could", "podia, poderia"]
     ]
   ]
 },
@@ -35,27 +28,27 @@ const lessonCards = [
   "title": "Vocabulary",
   "columns": [
     [
-      ["sink", "pia"],
-      ["salt", "sal"],
-      ["salt shaker", "saleiro"],
-      ["pepper", "pimenta"],
-      ["pepper shaker", "pimenteiro"],
-      ["light bulb", "lâmpada"],
-      ["lamp", "abajur"],
-      ["candle", "vela"],
-      ["movie theater", "cinema"],
-      ["half", "meio, metade"]
+      ["spice", "tempero"],
+      ["vinegar", "vinagre"],
+      ["olive", "azeitona"],
+      ["olive oil", "azeite de oliva"],
+      ["salad dressing", "molho para salada"],
+      ["sauce", "molho"],
+      ["tray", "bandeja"],
+      ["hanger", "cabide"],
+      ["rug", "tapete"],
+      ["carpet", "carpete"]
     ],
     [
-      ["bell", "sino"],
-      ["doorbell", "campainha"],
-      ["sunglasses", "óculos de sol"],
-      ["place", "lugar"],
-      ["online", "conectado"],
-      ["offline", "desconectado"],
-      ["monitor", "monitor"],
-      ["slim monitor", "monitor de tela fina"],
-      ["mouse", "mouse"]
+      ["chair", "cadeira"],
+      ["armchair", "poltrona"],
+      ["couch", "sofá"],
+      ["doorknob", "maçaneta"],
+      ["dresser", "cômoda"],
+      ["doormat", "capacho"],
+      ["wardrobe", "armário | guarda-roupa"],
+      ["closet", "armário embutido"],
+      ["cupboard", "armário de cozinha"]
     ]
   ]
 },
@@ -63,61 +56,45 @@ const lessonCards = [
   "title": "Expressions",
   "columns": [
     [
-      ["half a dollar", "meio dólar"]
+      ["It's fun", "É divertido"],
+      ["to have fun", "divertir-se"],
+      ["funny", "engraçado"]
     ],
     [
-      ["pizza place", "pizzaria"]
+      ["spicy", "apimentada, bem temperada"],
+      ["broadband", "banda larga"],
+      ["dial up connection", "conexão discada"]
     ],
     [
-      ["to go jogging", "fazer 'cooper'"]
-    ],
-    [
-      ["leftovers", "sobras"]
+      ["guy", "sujeito, cara"],
+      ["you guys", "vocês, turma"]
     ]
   ]
 },
 {
-  "title": "Grammar",
+  "title": "Grammar - Could / Couldn't",
   "columns": [
     [
-      ["This is my passport.", "Este é meu passaporte."],
-      ["This is your ring.", "Este é seu anel."],
-      ["This is his camera.", "Esta é sua câmera."],
-      ["This is her purse.", "Esta é sua bolsa."],
-      ["This is our dog.", "Este é nosso cachorro."],
-      ["These are their magazines.", "Estas são suas revistas."],
-
-      ["",""],["",""],
-
-      ["She stopped eating red meat.", "Ela parou de comer carne vermelha."],
-      ["She stopped working to study only.", "Ela parou de trabalhar para somente estudar."]
+      ["I could do it for you.", "Eu poderia fazer isto para você."],
+      ["It could happen again.", "Isto poderia acontecer novamente."],
+      ["She could talk to him.", "Ela poderia falar com ele."],
+      ["They could stay here.", "Eles poderiam ficar aqui."],
+      [" ", " "],
+      ["I couldn't live without you.", "Eu não poderia viver sem você."],
+      ["It couldn't be better.", "Não poderia ser melhor."],
+      ["She couldn't do it alone.", "Ela não poderia fazer isto sozinha."],
+      ["We couldn't buy it now.", "Nós não poderíamos comprar isto agora."]
     ],
     [
-      ["This passport is mine.", "Este passaporte é meu."],
-      ["This ring is yours.", "Este anel é seu."],
-      ["This camera is his.", "Esta câmera é dele."],
-      ["This purse is hers.", "Esta bolsa é dela."],
-      ["This dog is ours.", "Este cachorro é nosso."],
-      ["These magazines are theirs.", "Estas revistas são deles."],
-            ["",""],["",""]
-
-    ]
-  ]
-},
-{
-  "title": "Phrases - Card",
-  "columns": [
-    [
-      ["We ran in the rain.",""],
-      ["Did you run yesterday morning?",""],
-      ["They didn't run to the classroom.",""],
-      ["Who runs his business?",""]
-    ],
-    [
-      ["The doctor saved his life.",""],
-      ["He didn't save his money.",""],
-      ["Did you save a seat for me?",""],
-      ["Didn't you save the leftovers?",""]
+      ["Could I call you tomorrow?", "Eu poderia te ligar amanhã?"],
+      ["Could you come here please?", "Você poderia vir aqui, por favor?"],
+      ["Could you help us now?", "Você poderia nos ajudar agora?"],
+      ["Could we go with you?", "Nós poderíamos ir com vocês?"],
+      [" ", " "],
+      ["Couldn't they wait for us?", "Eles não poderiam nos esperar?"],
+      ["Couldn't you do it yourself?", "Você não poderia fazer você mesmo?"],
+      ["Couldn't we go out tonight?", "Não poderíamos sair hoje à noite?"],
+      ["Why couldn't we go now?", "Por que nós não poderíamos ir agora?"]
     ]
   ]
 },
@@ -125,16 +102,22 @@ const lessonCards = [
   "title": "Phrases - Card",
   "columns": [
     [
-      ["She didn't stop working.",""],
-      ["He didn't stop it to work.",""],
-      ["Did you stop running every day?",""],
-      ["Didn't she stop thinking about it?",""]
+      ["I could understand it.", ""],
+      ["You could also come.", ""],
+      ["We could send it today.", ""],
+      ["She could do anything.", ""],
+      ["They could take her there.", ""],
+      ["He could save more money.", ""],
+      ["We could invite them.", ""]
     ],
     [
-      ["It's only half a dollar.",""],
-      ["How long does it take?",""],
-      ["It will take half an hour.",""],
-      ["She went jogging this morning.",""]
+      ["Could I save it now?", ""],
+      ["Could you come tomorrow night?", ""],
+      ["Could it be cleaned now?", ""],
+      ["Could he take us to the airport?", ""],
+      ["Could she go by herself?", ""],
+      ["Could they finish it tomorrow?", ""],
+      ["Could we start it today?", ""]
     ]
   ]
 },
@@ -142,20 +125,22 @@ const lessonCards = [
   "title": "Phrases - Card",
   "columns": [
     [
-      ["These are my sunglasses.",""],
-      ["This is her wallet.",""],
-      ["This is your DVD.",""],
-      ["Those are their books.",""],
-      ["This is his briefcase.",""],
-      ["These are our shoes.",""]
+      ["I couldn't remember your phone number.", ""],
+      ["They couldn't try again.", ""],
+      ["He couldn't play soccer very well.", ""],
+      ["She couldn't open the door.", ""],
+      ["It couldn't start late.", ""],
+      ["They couldn't stay with us.", ""],
+      ["We couldn't go anymore.", ""]
     ],
     [
-      ["These sunglasses are mine.",""],
-      ["This wallet is hers.",""],
-      ["That DVD is yours.",""],
-      ["Those books are theirs.",""],
-      ["This briefcase is his.",""],
-      ["These shoes are ours.",""]
+      ["Couldn't he sleep here tonight?", ""],
+      ["Couldn't they bring anything?", ""],
+      ["Couldn't it start again?", ""],
+      ["Couldn't we study together?", ""],
+      ["Couldn't he sing for us?", ""],
+      ["Couldn't they buy a new car?", ""],
+      ["Couldn't we take it off?", ""]
     ]
   ]
 },
@@ -163,12 +148,16 @@ const lessonCards = [
   "title": "Phrases - Card",
   "columns": [
     [
-      ["Who's online now?",""],
-      ["Jane is online.",""]
+      ["Have fun.", ""],
+      ["Are you having fun?", ""],
+      ["This is so funny.", ""],
+      ["He's a funny guy.", ""]
     ],
     [
-      ["Did you save your text?",""],
-      ["I will save it now.",""]
+      ["How fun.", ""],
+      ["The movie is so funny.", ""],
+      ["Did you have fun?", ""],
+      ["We had a lot of fun.", ""]
     ]
   ]
 },
@@ -176,13 +165,7 @@ const lessonCards = [
   "title": "Verbs",
   "columns": [
     [
-      ["to run, ran", "correr, administrar"]
-    ],
-    [
-      ["to stop, stopped", "parar"]
-    ],
-    [
-      ["to save, saved", "salvar, economizar, poupar"]
+      ["could", "podia, poderia"]
     ]
   ]
 },
@@ -190,27 +173,27 @@ const lessonCards = [
   "title": "Vocabulary",
   "columns": [
     [
-      ["sink", "pia"],
-      ["salt", "sal"],
-      ["salt shaker", "saleiro"],
-      ["pepper", "pimenta"],
-      ["pepper shaker", "pimenteiro"],
-      ["light bulb", "lâmpada"],
-      ["lamp", "abajur"],
-      ["candle", "vela"],
-      ["movie theater", "cinema"],
-      ["half", "meio, metade"]
+      ["spice", "tempero"],
+      ["vinegar", "vinagre"],
+      ["olive", "azeitona"],
+      ["olive oil", "azeite de oliva"],
+      ["salad dressing", "molho para salada"],
+      ["sauce", "molho"],
+      ["tray", "bandeja"],
+      ["hanger", "cabide"],
+      ["rug", "tapete"],
+      ["carpet", "carpete"]
     ],
     [
-      ["bell", "sino"],
-      ["doorbell", "campainha"],
-      ["sunglasses", "óculos de sol"],
-      ["place", "lugar"],
-      ["online", "conectado"],
-      ["offline", "desconectado"],
-      ["monitor", "monitor"],
-      ["slim monitor", "monitor de tela fina"],
-      ["mouse", "mouse"]
+      ["chair", "cadeira"],
+      ["armchair", "poltrona"],
+      ["couch", "sofá"],
+      ["doorknob", "maçaneta"],
+      ["dresser", "cômoda"],
+      ["doormat", "capacho"],
+      ["wardrobe", "armário"],
+      ["closet", "armário embutido"],
+      ["cupboard", "armário de cozinha"]
     ]
   ]
 },
@@ -218,48 +201,52 @@ const lessonCards = [
   "title": "Expressions",
   "columns": [
     [
-      ["half a dollar", "meio dólar"]
+      ["It's fun", "É divertido"],
+      ["to have fun", "divertir-se"],
+      ["funny", "engraçado"]
     ],
     [
-      ["pizza place", "pizzaria"]
+      ["spicy", "apimentada, bem temperada"],
+      ["broadband", "banda larga"],
+      ["dial up connection", "conexão discada"]
     ],
     [
-      ["to go jogging", "fazer 'cooper'"]
-    ],
-    [
-      ["leftovers", "sobras"]
+      ["guy", "sujeito, cara"],
+      ["you guys", "vocês, turma"]
     ]
   ]
 },
 {
-  "title": "Grammar",
+  "title": "Grammar - Could / Couldn't",
   "columns": [
     [
-      ["This is my passport.", "Este é meu passaporte."],
-      ["This is your ring.", "Este é seu anel."],
-      ["This is his camera.", "Esta é sua câmera."],
-      ["This is her purse.", "Esta é sua bolsa."],
-      ["This is our dog.", "Este é nosso cachorro."],
-      ["These are their magazines.", "Estas são suas revistas."],
+      ["I could do it for you.", "Eu poderia fazer isto para você."],
+      ["It could happen again.", "Isto poderia acontecer novamente."],
+      ["She could talk to him.", "Ela poderia falar com ele."],
+      ["They could stay here.", "Eles poderiam ficar aqui."],
+      [" ", " "],
 
-      ["",""],["",""],
-
-      ["She stopped eating red meat.", "Ela parou de comer carne vermelha."],
-      ["She stopped working to study only.", "Ela parou de trabalhar para somente estudar."]
+      ["I couldn't live without you.", "Eu não poderia viver sem você."],
+      ["It couldn't be better.", "Não poderia ser melhor."],
+      ["She couldn't do it alone.", "Ela não poderia fazer isto sozinha."],
+      ["We couldn't buy it now.", "Nós não poderíamos comprar isto agora."]
     ],
     [
-      ["This passport is mine.", "Este passaporte é meu."],
-      ["This ring is yours.", "Este anel é seu."],
-      ["This camera is his.", "Esta câmera é dele."],
-      ["This purse is hers.", "Esta bolsa é dela."],
-      ["This dog is ours.", "Este cachorro é nosso."],
-      ["These magazines are theirs.", "Estas revistas são deles."],
-            ["",""],["",""]
+      ["Could I call you tomorrow?", "Eu poderia te ligar amanhã?"],
+      ["Could you come here please?", "Você poderia vir aqui, por favor?"],
+      ["Could you help us now?", "Você poderia nos ajudar agora?"],
+      ["Could we go with you?", "Nós poderíamos ir com vocês?"],
+      [" ", " "],
 
+
+      ["Couldn't they wait for us?", "Eles não poderiam nos esperar?"],
+      ["Couldn't you do it yourself?", "Você não poderia fazer você mesmo?"],
+      ["Couldn't we go out tonight?", "Não poderíamos sair hoje à noite?"],
+      ["Why couldn't we go now?", "Por que nós não poderíamos ir agora?"]
     ]
   ]
-},
-
+}
+,
 ];
 
 function loadLessonContent() {
