@@ -262,10 +262,10 @@ const lessonCards = [
   "title": "Listening & Comprehension - Laughter is a Therapy",
   "columns": [
     [
-      ["Laughter is a universal _____.", "", 1083, 1091],
-      ["It's so contagious that you can be _____ where you don't speak the language,", "", 1091, 1097],
-      ["and _____ laughing, probably people around you will start laughing too.", "", 1097, 1102],
-      ["_____ you laugh your body produces a substance called “endorphin”.", "", 1102, 1110],
+      ["Laughter is a universal _____.", "", 1088, 1092],
+      ["It's so contagious that you can be _____ where you don't speak the language,", "", 1092, 1097],
+      ["and _____ laughing, probably people around you will start laughing too.", "", 1097, 1103],
+      ["_____ you laugh your body produces a substance called “endorphin”.", "", 1103, 1111],
       ["This substance makes you feel good.", "", 1110, 1114],
       ["_____ in a bad mood, you will automatically feel better.", "", 1114, 1118],
       ["So, laughter is a natural antidepressant.", "", 1118, 1121],
