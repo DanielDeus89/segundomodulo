@@ -2,7 +2,7 @@ const lessonTitle = "Lesson 62";
 const currentVideoId = "vDAU4iSe7bo";
 
 const timeRanges = [
-   { start: 0, end: 109 },
+  { start: 0, end: 109 },
   { start: 109, end: 153 },
   { start: 153, end: 260 },
   { start: 260, end: 315 },
@@ -18,10 +18,15 @@ const timeRanges = [
   { start: 796, end: 811 },
   { start: 811, end: 827 },
   { start: 827, end: 9999 },
+ 
+
+
+
 
 ];
 
 const lessonCards = [
+
   {
     title: "Practice",
     columns: [
@@ -106,69 +111,73 @@ const lessonCards = [
       ]
     ]
   },
-   {
+ {
     title: "Listening - Question 1",
     columns: [
       [
-      ["img", "../images/62_1.png"],
+      ["img", "../images/66_1.png"],
       ["a)", "", 4, 17],
       ["b)", "", 4, 17],
       ["c)", "", 4, 17]
       ]
     ]
-  },{
+  },
+  {
     title: "Listening - Question 2",
     columns: [
       [
-      ["img", "../images/62_2.png"],
-      ["a)", "", 4, 17],
-      ["b)", "", 4, 17],
-      ["c)", "", 4, 17]
+        ["img", "../images/66_2.png"],
+        ["a)", "", 18, 33],
+        ["b)", "", 4, 17],
+        ["c)", "", 4, 17]
       ]
     ]
-  },{
+  },
+  {
     title: "Listening - Question 3",
     columns: [
       [
-      ["img", "../images/62_3.png"],
-      ["a)", "", 4, 17],
-      ["b)", "", 4, 17],
-      ["c)", "", 4, 17]
+        ["img", "../images/66_3.png"],
+        ["a)", "", 33, 17],
+        ["b)", "", 4, 17],
+        ["c)", "", 4, 17]
       ]
     ]
-  },{
+  },
+  {
     title: "Listening - Question 4",
     columns: [
       [
-      ["img", "../images/62_4.png"],
-      ["a)", "", 4, 17],
-      ["b)", "", 4, 17],
-      ["c)", "", 4, 17]
+        ["img", "../images/66_4.png"],
+        ["a)", "", 33, 17],
+        ["b)", "", 4, 17],
+        ["c)", "", 4, 17]
       ]
     ]
   },
   {
     title: "Listening - Question 5",
-    columns: [
-      [
-      ["img", "../images/62_5.png"],
-      ["a)", "", 4, 17],
+  columns: [
+    [
+      ["img", "../images/66_5.png"],
+      ["a)", "", 33, 17],
       ["b)", "", 4, 17],
       ["c)", "", 4, 17]
-      ]
     ]
+  ]
   },
   {
     title: "Listening - Question 6",
     columns: [
       [
-      ["img", "../images/62_6.png"],
-      ["a)", "", 4, 17],
-      ["b)", "", 4, 17],
-      ["c)", "", 4, 17]
+        ["img", "../images/66_6.png"],
+        ["a)", "", 33, 17],
+        ["b)", "", 4, 17],
+        ["c)", "", 4, 17]
       ]
     ]
   },
+ 
    {
   "title": "Listen and Answer",
   "type": "listening",
@@ -181,6 +190,7 @@ const lessonCards = [
   ]
   },
 
+
 ];
 
 function loadLessonContent() {
@@ -192,17 +202,6 @@ function loadLessonContent() {
     const div = document.createElement("div");
     div.className = "card";
     if (index === 0) div.classList.add("active");
-
-    // Verifica se existe imagem no card
-if (card.image) {
-  const img = document.createElement("img");
-  img.src = card.image;
-  img.alt = "Imagem da pergunta";
-  img.style.maxWidth = "100%";
-  img.style.marginBottom = "10px";
-  div.appendChild(img);
-}
-
 
     if (card.title) {
       const h2 = document.createElement("h2");
@@ -253,42 +252,25 @@ if (card.image) {
       const col = document.createElement("div");
       col.className = "vocab-col";
 
-colData.forEach(item => {
-  // Verifica se é uma imagem
-  if (item[0] === "img" && item[1]) {
-    const img = document.createElement("img");
-    img.src = item[1];
-    img.alt = "Imagem da coluna";
-   img.style.display = "block";
-img.style.margin = "0 auto 30px";
-img.style.maxWidth = "200%";
-img.style.maxHeight = "300px";
-img.style.borderRadius = "8px";
-img.style.boxShadow = "0 2px 6px rgba(0,0,0,0.1)";
+      colData.forEach(item => {
+        const p = document.createElement("p");
 
-    
-    col.appendChild(img);
-  } else {
-    const p = document.createElement("p");
+        if (item.length === 4) {
+          const [text, , start, end] = item;
 
-    if (item.length === 4) {
-      const [text, , start, end] = item;
+          const span = document.createElement("span");
+          span.className = "text-blue clickable";
+          span.textContent = text;
+          span.onclick = () => playSegment(start, end);
 
-      const span = document.createElement("span");
-      span.className = "text-blue clickable";
-      span.textContent = text;
-      span.onclick = () => playSegment(start, end);
+          p.appendChild(span);
+        } else {
+          const [en, pt] = item;
+          p.innerHTML = `<span class="text-blue">${en}</span><br><span class="text-white">${pt}</span>`;
+        }
 
-      p.appendChild(span);
-    } else {
-      const [en, pt] = item;
-      p.innerHTML = `<span class="text-blue">${en}</span><br><span class="text-white">${pt}</span>`;
-    }
-
-    col.appendChild(p);
-  }
-});
-
+        col.appendChild(p);
+      });
 
       grid.appendChild(col);
     });
@@ -320,8 +302,6 @@ function toggleText(button) {
   const isNowVisible = card.classList.toggle("show-text");
   button.textContent = isNowVisible ? "🙈 Ocultar" : "👁️ Exibir";
 }
-
-
 
 window.onload = () => {
   loadLessonContent();

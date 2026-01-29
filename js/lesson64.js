@@ -170,16 +170,6 @@ const lessonCards = [
     title: "Listening - Question 1",
     columns: [
       [
-        ["a) They went to California.", ""],
-        ["b) They went to New York.", ""],
-        ["c) They went to Florida.", ""]
-      ]
-    ]
-  },
-  {
-    title: "Listening - Question 2",
-    columns: [
-      [
         ["a) She's reading about the weather.", ""],
         ["b) She's talking about the weather.", ""],
         ["c) She's watching the weather forecast.", ""]
@@ -187,7 +177,7 @@ const lessonCards = [
     ]
   },
   {
-    title: "Listening - Question 3",
+    title: "Listening - Question 2",
     columns: [
       [
         ["a) He'd like to go to the park.", ""],
@@ -197,7 +187,7 @@ const lessonCards = [
     ]
   },
   {
-    title: "Listening - Question 4",
+    title: "Listening - Question 3",
     columns: [
       [
         ["a) They're going to have bread and juice.", ""],
@@ -207,7 +197,7 @@ const lessonCards = [
     ]
   },
   {
-    title: "Listening - Question 5",
+    title: "Listening - Question 4",
     columns: [
       [
         ["a) He does his homework every other day.", ""],
