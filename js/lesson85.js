@@ -3,16 +3,16 @@ const currentVideoId = "3c980kpIyr0";
 
 const timeRanges = [
   { start: 0, end: 13 }, //Verbs
-  { start: 13, end: 75 }, //Vocabulary
-  { start: 75, end: 97 }, //exp 
-  { start: 97, end: 152 }, //Grammar
-  { start: 152, end: 225 }, //Frases 1
-  { start: 225, end: 305 }, //Fr2
-  { start: 305, end: 343 }, //Fr3
-  { start: 343, end: 514 }, //Verbs
-  { start: 514, end: 773 }, //vac
-  { start: 773, end: 875 }, //exp
-  { start: 875, end: 1148 }, //Gramm  
+  { start: 13, end: 79 }, //Vocabulary
+  { start: 79, end: 100 }, //exp 
+  { start: 100, end: 152 }, //Grammar
+  { start: 152, end: 228 }, //Frases 1
+  { start: 228, end: 302 }, //Fr2
+  { start: 302, end: 332 }, //Fr3
+  { start: 332, end: 499 }, //Verbs
+  { start: 499, end: 802 }, //vac
+  { start: 802, end: 889 }, //exp
+  { start: 889, end: 1157 }, //Gramm  
 ];
 
 const lessonCards = [
@@ -28,26 +28,27 @@ const lessonCards = [
   "title": "Vocabulary",
   "columns": [
     [
-      ["sticker", "adesivo"],
-      ["calendar", "calendário"],
-      ["résumé", "currículo"],
-      ["folder", "pasta de papéis"],
-      ["truth", "verdade"],
-      ["lie", "mentira"],
-      ["true", "verdade, verdadeiro"],
-      ["false", "falso"],
-      ["file", "arquivo"]
-  
+      ["bookcase", "estante"],
+      ["shelf", "prateleira"],
+      ["bench", "banco, assento"],
+      ["stool", "banquinho"],
+      ["teapot", "bule de chá"],
+      ["apron", "avental"],
+      ["saucer", "pires"],
+      ["faucet", "torneira"],
+      ["comfort", "conforto"],
+      ["comfortable", "confortável"]
     ],
     [
-      ["file cabinet", "arquivo (móvel)"],
-      ["report", "relatório"],
-      ["clerk", "balconista"],
-      ["typist", "datilógrafo, digitador"],
-      ["paper clip", "clipes"],
-      ["notepad", "bloco de anotações"],
-      ["diary", "agenda"],
-      ["stapler", "grampeador"]
+      ["attic", "sótão"],
+      ["roof", "telhado"],
+      ["ceiling", "teto"],
+      ["cellar", "porão, adega"],
+      ["basement", "subsolo, porão"],
+      ["star", "estrela"],
+      ["sky", "céu"],
+      ["heaven", "céu, paraíso"],
+      ["rocket", "foguete"]
     ]
   ]
 },
@@ -55,100 +56,96 @@ const lessonCards = [
   "title": "Expressions",
   "columns": [
     [
-      ["to fire", "dispensar, despedir"],
-      ["report card", "boletim escolar"]
+      ["first floor", "primeiro andar"],
+      ["ground floor", "térreo"]
     ],
     [
-      ["bad words", "palavrões"],
-      ["swear words", "palavrões"]
-    ],
-    [
-      ["besides", "além (do mais)"]
+      ["it won't help", "não adiantará"],
+      ["two story house", "sobrado"]
     ]
   ]
 },
 {
-  "title": "Grammar - Should / Shouldn't",
+  "title": "Grammar",
   "columns": [
     [
-      ["You should study more.", "Você deveria estudar mais."],
-      ["She should take an aspirin.", "Ela deveria tomar uma aspirina."],
-      ["People shouldn't say bad words.", "As pessoas não deveriam dizer palavrões."],
-      ["We shouldn't go there.", "Nós não deveríamos ir lá."],
-      ["Should we work this holiday?", "Nós deveríamos trabalhar este feriado?"]
-      
+      ["They must do it.", "Eles devem fazê-lo."],
+      ["She must be right.", "Ela deve estar certa."]
     ],
     [
-      ["Should we go now?", "Nós deveríamos ir agora?"],
-      ["Should I send my résumé?", "Eu deveria enviar meu currículo?"],
-      ["Shouldn't we go now?", "Nós não deveríamos ir agora?"],
-      ["Shouldn't we stay longer?", "Nós não deveríamos ficar mais tempo?"]
+      ["It mustn't be comfortable.", "Isto não deve ser confortável."],
+      ["She must not travel today.", "Ela não deve viajar hoje."]
+    ],
+    [
+      ["Must we do that?", "Nós devemos fazer aquilo?"],
+      ["Must we leave now?", "Nós devemos partir agora?"],
+      ["Must we lock the car?", "Nós devemos trancar o carro?"],
+      ["Must we forget it?", "Nós devemos esquecer isto?"]
     ]
   ]
 },
 {
-  "title": "Phrases - Should / Shouldn't",
+  "title": "Phrases - Must / Mustn't",
   "columns": [
     [
-      ["We should go now.", ""],
-      ["You should send it to him.", ""],
-      ["It should be ready by now.", ""],
-      ["He should invite her.", ""],
-      ["She should come with us.", ""],
-      ["We should arrive before noon.", ""]
+      ["We must be there by 10 a.m.", "Nós devemos estar lá às 10 da manhã."],
+      ["It must be good.", "Isto deve ser bom."],
+      ["He must be here anytime now.", "Ele deve estar aqui a qualquer momento."],
+      ["She must come soon.", "Ela deve vir em breve."],
+      ["We must help her.", "Nós devemos ajudá-la."],
+      ["They must be near here.", "Eles devem estar perto daqui."]
     ],
     [
-      ["Shouldn't we call them first?", ""],
-      ["Shouldn't they think about it?", ""],
-      ["Shouldn't we invite them?", ""],
-      ["Shouldn't she come to the meeting?", ""],
-      ["Shouldn't they hurry?", ""],
-      ["Shouldn't we help them?", ""]
+      ["We must not think about it.", "Nós não devemos pensar sobre isso."],
+      ["It must not be wrong.", "Isto não deve estar errado."],
+      ["She must not drink and drive.", "Ela não deve beber e dirigir."],
+      ["He must not exercise at night.", "Ele não deve se exercitar à noite."],
+      ["We must not take this plane.", "Nós não devemos pegar este avião."],
+      ["They must not take too much money.", "Eles não devem levar muito dinheiro."]
     ]
   ]
 },
 {
-  "title": "Phrases - Should / Shouldn't",
+  "title": "Phrases - Must / Mustn't",
   "columns": [
     [
-      ["She shouldn't say anything.", ""],
-      ["You shouldn't sleep until late.", ""],
-      ["We shouldn't fire her.", ""],
-      ["They shouldn't stop studying.", ""],
-      ["She shouldn't work overtime.", ""],
-      ["They shouldn't give him any money.", ""]
+      ["Must it start now?", "Isso deve começar agora?"],
+      ["Must it be ready?", "Isso deve estar pronto?"],
+      ["Must he invite them?", "Ele deve convidá-los?"],
+      ["Must she pay in cash?", "Ela deve pagar em dinheiro?"],
+      ["Must they stay until she arrives?", "Eles devem ficar até ela chegar?"],
+      ["Must we work this holiday?", "Nós devemos trabalhar neste feriado?"]
     ],
     [
-      ["Should I send him an email?", ""],
-      ["Shouldn't you guys wait?", ""],
-      ["Should he send it back?", ""],
-      ["Should she remember that?", ""],
-      ["Should we buy more food?", ""],
-      ["Should we leave now?", ""]
+      ["Must I be at the meeting?", "Eu devo estar na reunião?"],
+      ["Must it be different?", "Isso deve ser diferente?"],
+      ["Must she be here?", "Ela deve estar aqui?"],
+      ["Must he pay for this?", "Ele deve pagar por isso?"],
+      ["Must we make the speech?", "Nós devemos fazer o discurso?"],
+      ["Must they start it now?", "Eles devem começar agora?"]
     ]
   ]
 },
 {
-  "title": "Phrases - Review",
+  "title": "Phrases - Must / Mustn't",
   "columns": [
     [
-      ["She was fired today.", ""],
-      ["Besides working, I study too.", ""],
-      ["Are they going to fire him?", ""]
+      ["Will this help?", "Isso vai ajudar?"],
+      ["It won't help.", "Isso não vai ajudar."],
+      ["It won't work.", "Isso não vai funcionar."]
     ],
     [
-      ["Never say bad words.", ""],
-      ["Did you bring your report card?", ""],
-      ["We received his résumé by email.", ""]
+      ["They bought a two story house.", "Eles compraram um sobrado."],
+      ["She lives in the basement.", "Ela mora no porão."],
+      ["He lives on the first floor.", "Ele mora no primeiro andar."]
     ]
   ]
 },
-
 {
   "title": "Verbs",
   "columns": [
     [
-      ["should", "dever, deveria"]
+      ["must", "dever, ter que"]
     ]
   ]
 },
@@ -156,26 +153,27 @@ const lessonCards = [
   "title": "Vocabulary",
   "columns": [
     [
-      ["sticker", "adesivo"],
-      ["calendar", "calendário"],
-      ["résumé", "currículo"],
-      ["folder", "pasta de papéis"],
-      ["truth", "verdade"],
-      ["lie", "mentira"],
-      ["true", "verdade, verdadeiro"],
-      ["false", "falso"],
-      ["file", "arquivo"]
-  
+      ["bookcase", "estante"],
+      ["shelf", "prateleira"],
+      ["bench", "banco, assento"],
+      ["stool", "banquinho"],
+      ["teapot", "bule de chá"],
+      ["apron", "avental"],
+      ["saucer", "pires"],
+      ["faucet", "torneira"],
+      ["comfort", "conforto"],
+      ["comfortable", "confortável"]
     ],
     [
-      ["file cabinet", "arquivo (móvel)"],
-      ["report", "relatório"],
-      ["clerk", "balconista"],
-      ["typist", "datilógrafo, digitador"],
-      ["paper clip", "clipes"],
-      ["notepad", "bloco de anotações"],
-      ["diary", "agenda"],
-      ["stapler", "grampeador"]
+      ["attic", "sótão"],
+      ["roof", "telhado"],
+      ["ceiling", "teto"],
+      ["cellar", "porão, adega"],
+      ["basement", "subsolo, porão"],
+      ["star", "estrela"],
+      ["sky", "céu"],
+      ["heaven", "céu, paraíso"],
+      ["rocket", "foguete"]
     ]
   ]
 },
@@ -183,38 +181,34 @@ const lessonCards = [
   "title": "Expressions",
   "columns": [
     [
-      ["to fire", "dispensar, despedir"],
-      ["report card", "boletim escolar"]
+      ["first floor", "primeiro andar"],
+      ["ground floor", "térreo"]
     ],
     [
-      ["bad words", "palavrões"],
-      ["swear words", "palavrões"]
-    ],
-    [
-      ["besides", "além (do mais)"]
+      ["it won't help", "não adiantará"],
+      ["two story house", "sobrado"]
     ]
   ]
 },
 {
-  "title": "Grammar - Should / Shouldn't",
+  "title": "Grammar",
   "columns": [
     [
-      ["You should study more.", "Você deveria estudar mais."],
-      ["She should take an aspirin.", "Ela deveria tomar uma aspirina."],
-      ["People shouldn't say bad words.", "As pessoas não deveriam dizer palavrões."],
-      ["We shouldn't go there.", "Nós não deveríamos ir lá."],
-      ["Should we work this holiday?", "Nós deveríamos trabalhar este feriado?"]
-      
+      ["They must do it.", "Eles devem fazê-lo."],
+      ["She must be right.", "Ela deve estar certa."]
     ],
     [
-      ["Should we go now?", "Nós deveríamos ir agora?"],
-      ["Should I send my résumé?", "Eu deveria enviar meu currículo?"],
-      ["Shouldn't we go now?", "Nós não deveríamos ir agora?"],
-      ["Shouldn't we stay longer?", "Nós não deveríamos ficar mais tempo?"]
+      ["It mustn't be comfortable.", "Isto não deve ser confortável."],
+      ["She must not travel today.", "Ela não deve viajar hoje."]
+    ],
+    [
+      ["Must we do that?", "Nós devemos fazer aquilo?"],
+      ["Must we leave now?", "Nós devemos partir agora?"],
+      ["Must we lock the car?", "Nós devemos trancar o carro?"],
+      ["Must we forget it?", "Nós devemos esquecer isto?"]
     ]
   ]
-}
-,
+},
 ];
 
 function loadLessonContent() {

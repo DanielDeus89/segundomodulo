@@ -250,8 +250,8 @@ const lessonCards = [
   title: "Listening & Comprehension",
   type: "listening",
   segments: [
-    { text: "1. What was the first man in the story asked?", start: 1246, end: 1250 }, //https://youtu.be/yeAbAUL7BWs?t=217
-    { text: "2. What did the first man in the story answer?", start: 1250, end: 1255 }, //https://youtu.be/yeAbAUL7BWs?t=222
+    { text: "1. What was the first man in the story asked?", start: 1246, end: 1251 }, //https://youtu.be/yeAbAUL7BWs?t=217
+    { text: "2. What did the first man in the story answer?", start: 1251, end: 1255 }, //https://youtu.be/yeAbAUL7BWs?t=222
     { text: "3. What did the second man in the story answer?", start: 1255, end: 1259 }, //https://youtu.be/yeAbAUL7BWs?t=229
     { text: "4. What did the third man in the story answer?", start: 1259, end: 1263 }, // https://youtu.be/yeAbAUL7BWs?t=237
     { text: "5. What will happen if you always see the big picture in your life?", start: 1263, end: 1269 } //https://youtu.be/yeAbAUL7BWs?t=241 
