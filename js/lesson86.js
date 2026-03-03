@@ -132,7 +132,7 @@ const lessonCards = [
   type: "listening",
   segments: [
     { text: "", start: 866, end: 871 }, //https://youtu.be/yeAbAUL7BWs?t=217
-    { text: "", start: 871, end: 873 }, //https://youtu.be/yeAbAUL7BWs?t=217
+    { text: "", start: 870, end: 873 }, //https://youtu.be/yeAbAUL7BWs?t=217
   ]
 },
 {

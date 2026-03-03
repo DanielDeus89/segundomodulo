@@ -253,7 +253,7 @@ const lessonCards = [
       ["",""],      
        [ ["We were", "We weren't", "Were we?", "Weren't we?"],""],
        [ ["You were", "You weren't", "Were you?", "Weren't you?"], ""],
-       [ ["You were", "They weren't", "Were they?","Weren't they?"], ""]
+       [ ["They were", "They weren't", "Were they?","Weren't they?"], ""]
     ],    
   ]
 }
