@@ -118,3 +118,22 @@ iframe {
     margin-left: 0;
   }
 }
+
+
+.hidden-word {
+  display: inline-block;
+  min-width: 90px;
+  padding: 2px 6px;
+  margin: 0 3px;
+  border-bottom: 2px solid #4ea3ff;
+  color: #4ea3ff;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.hidden-word.revealed {
+  background: rgba(78, 163, 255, 0.15);
+  border-radius: 6px;
+}

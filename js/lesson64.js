@@ -114,7 +114,9 @@ const lessonCards = [
       ["Anne: OK. See you.", "", 148, 150]
     ]
   ]
-  },{
+  },
+  
+  {
   title: "Dialogue & Role Play - How is the weather?",
   columns: [
     [
