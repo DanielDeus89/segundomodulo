@@ -32,12 +32,11 @@
           <p class="info-text" style="margin:8px 0 12px 0;">
             💡 Clique nas frases em azul para ouvir a pronúncia em inglês.
           </p>
-
-          <div class="stack-controls" style="margin:0; padding:0;">
-            <button onclick="prevCard()">⬅️ Anterior</button>
-            <button id="nextBtn" onclick="nextCard()" disabled>Próximo ➡️</button>
-          </div>
-        </div>
+      <div class="stack-controls" style="margin:0; padding:0;">
+        <button onclick="prevCard()">⬅️ Anterior</button>
+        <button onclick="back5Seconds()">⏪ Voltar 5s</button>
+        <button id="nextBtn" onclick="nextCard()" disabled>Próximo ➡️</button>
+      </div>
       </section>
 
       <!-- Vídeo -->
@@ -69,5 +68,15 @@
   <script src="../js/player.js"></script>
   <script src="../js/engine.js"></script>
   <script src="../js/lesson88.js"></script>
+
+  <script>
+  function back5Seconds() {
+    if (typeof player !== "undefined" && player && typeof player.getCurrentTime === "function") {
+      const currentTime = player.getCurrentTime();
+      const newTime = Math.max(0, currentTime - 5);
+      player.seekTo(newTime, true);
+    }
+  }
+</script>
 </body>
 </html>
