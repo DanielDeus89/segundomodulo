@@ -236,10 +236,6 @@ const lessonCards = [
   
 ];
 
-
-
-
-
 function loadLessonContent() {
   document.getElementById("lessonTitle").textContent = lessonTitle;
   const stack = document.querySelector(".card-stack");
@@ -248,17 +244,52 @@ function loadLessonContent() {
   lessonCards.forEach((card, index) => {
     const div = document.createElement("div");
     div.className = "card";
+
     if (index === 0) div.classList.add("active");
 
-    // Título
+    // TÍTULO COM BOTÃO PLAY/PAUSE DENTRO
     if (card.title) {
       const h2 = document.createElement("h2");
       h2.className = "section-title";
-      h2.textContent = card.title;
+      h2.style.display = "flex";
+      h2.style.justifyContent = "space-between";
+      h2.style.alignItems = "center";
+      h2.style.gap = "10px";
+
+      const titleSpan = document.createElement("span");
+      titleSpan.textContent = card.title;
+
+      const btnPlayPause = document.createElement("button");
+      btnPlayPause.textContent = "▶️";
+      btnPlayPause.style.background = "#111";
+      btnPlayPause.style.color = "#fff";
+      btnPlayPause.style.border = "none";
+      btnPlayPause.style.borderRadius = "6px";
+      btnPlayPause.style.padding = "6px 10px";
+      btnPlayPause.style.cursor = "pointer";
+      btnPlayPause.style.fontSize = "14px";
+      btnPlayPause.style.flexShrink = "0";
+
+      btnPlayPause.onclick = () => {
+        if (typeof player === "undefined" || !player) return;
+
+        const state = player.getPlayerState();
+
+        if (state === 1) {
+          player.pauseVideo();
+          btnPlayPause.textContent = "▶️";
+        } else {
+          player.playVideo();
+          btnPlayPause.textContent = "⏸";
+        }
+      };
+
+      h2.appendChild(titleSpan);
+      h2.appendChild(btnPlayPause);
       div.appendChild(h2);
     }
 
-    // Se for card de Listening
+    // CARD DE LISTENING
     if (card.type === "listening" && Array.isArray(card.segments)) {
       const row = document.createElement("div");
       row.className = "listening-row";
@@ -289,14 +320,14 @@ function loadLessonContent() {
 
       div.appendChild(row);
       stack.appendChild(div);
-      return; // evita processar abaixo
+      return;
     }
 
-    // Cards normais
+    // CARDS NORMAIS
     const grid = document.createElement("div");
     grid.className = "grid2";
 
-    card.columns.forEach(colData => {
+    card.columns.forEach((colData) => {
       const col = document.createElement("div");
       col.className = "vocab-col";
 
@@ -314,7 +345,6 @@ function loadLessonContent() {
   });
 }
 
-// 🔸 ESSENCIAL PARA FUNCIONAR:
 window.onload = () => {
   loadLessonContent();
 };
