@@ -33,25 +33,28 @@ const timeRanges = [
 
 const lessonCards = [
 
+
 {
-  "title": "A Goal or a Wish?",
+  "title": "Listening & Comprehension - A Goal or a Wish?",
+  "type": "listening",
   "columns": [
     [
-      ["If _____ stop _____ street _____ ask:", "", 4, 9],
-      ["'What _____ you _____ be _____ one year _____?'", "", 9, 12],
-      ["_____ do _____ want _____ be _____ from _____?", "", 12, 15],
-      ["'What _____ your plans _____?'", "", 15, 19],
-      ["Very _____ people _____ have _____ answer _____ you.", "", 19, 22],
-      ["If you _____ you're _____, how will you _____ when you'll _____?", "", 22, 27],
-      ["This means that _____ to determine in advance where you want to be so that _____ proper plans to arrive there.", "", 27, 36],
-      ["Your goals should not be so easy that you can reach _____ without effort.", "", 36, 42],
-      ["But they _____ too difficult, so that you end up frustrating _____.", "", 41, 46],
-      ["You must have a long-range goal and then divide this goal into smaller goals.", "", 46, 52],
-      ["Finally, remember _____ goals. A goal not written is only a wish.", "", 52, 60]
+
+      ["If you stop {{people}} on the street and ask:","", 4, 9],
+      ["What do you want to be doing one year {{from now}}?","", 9, 12],
+      ["Where do you want to be three years {{from now}}?","", 12, 15],
+      ["What are your plans five years {{from now}}?","", 15, 19],
+      ["Very few people will have an answer for you.","", 19, 22],
+      ["If you {{don't know}} where you're going, how will you know when you'll arrive there?","", 22, 27],
+      ["This means that you need to {{determine}} in advance where you want to be so that you can {{make}} proper plans to arrive there.","",  27, 36],
+      ["Your goals should not be so easy that you can reach them without effort.","", 36, 42],
+      ["But they {{can't be}} too difficult, so that you end up frustrating yourself.","",41, 46],
+      ["You must have a long-range goal and then divide this goal into smaller goals.","", 46, 52],
+      ["Finally, remember to {{write your}} goals.","", 52, 56],
+      ["A goal not written is only a {{wish}}.","", 56,60]
     ]
   ]
 },
-
 {
   "title": "Discussion - Goals",
   "type": "listening",
@@ -311,147 +314,3 @@ columns: [
 
 
 ];
-
-function loadLessonContent() {
-  document.getElementById("lessonTitle").textContent = lessonTitle;
-  const stack = document.querySelector(".card-stack");
-  stack.innerHTML = "";
-
-  lessonCards.forEach((card, index) => {
-    const div = document.createElement("div");
-    div.className = "card";
-    if (index === 0) div.classList.add("active");
-
-    // Verifica se existe imagem no card
-if (card.image) {
-  const img = document.createElement("img");
-  img.src = card.image;
-  img.alt = "Imagem da pergunta";
-  img.style.maxWidth = "100%";
-  img.style.marginBottom = "10px";
-  div.appendChild(img);
-}
-
-
-    if (card.title) {
-      const h2 = document.createElement("h2");
-      h2.className = "section-title";
-      h2.textContent = card.title;
-      div.appendChild(h2);
-    }
-
-    // Cards do tipo Listening
-    if (card.type === "listening" && Array.isArray(card.segments)) {
-      const row = document.createElement("div");
-      row.className = "listening-row";
-
-      card.segments.forEach((segment) => {
-        const cardDiv = document.createElement("div");
-        cardDiv.className = "listening-card";
-
-        const playBtn = document.createElement("button");
-        playBtn.textContent = "▶️ Ouvir";
-        playBtn.onclick = () => playSegment(segment.start, segment.end);
-
-        const toggleBtn = document.createElement("button");
-        toggleBtn.textContent = "👁️ Exibir";
-        toggleBtn.onclick = function () {
-          toggleText(this);
-        };
-
-        const span = document.createElement("span");
-        span.className = "hidden-text";
-        span.textContent = segment.text;
-
-        cardDiv.appendChild(playBtn);
-        cardDiv.appendChild(toggleBtn);
-        cardDiv.appendChild(span);
-        row.appendChild(cardDiv);
-      });
-
-      div.appendChild(row);
-      stack.appendChild(div);
-      return;
-    }
-
-    // Outros tipos de cards
-    const grid = document.createElement("div");
-    grid.className = "grid2";
-
-    card.columns.forEach(colData => {
-      const col = document.createElement("div");
-      col.className = "vocab-col";
-
-colData.forEach(item => {
-  // Verifica se é uma imagem
-  if (item[0] === "img" && item[1]) {
-    const img = document.createElement("img");
-    img.src = item[1];
-    img.alt = "Imagem da coluna";
-   img.style.display = "block";
-img.style.margin = "0 auto 30px";
-img.style.maxWidth = "200%";
-img.style.maxHeight = "300px";
-img.style.borderRadius = "8px";
-img.style.boxShadow = "0 2px 6px rgba(0,0,0,0.1)";
-
-    
-    col.appendChild(img);
-  } else {
-    const p = document.createElement("p");
-
-    if (item.length === 4) {
-      const [text, , start, end] = item;
-
-      const span = document.createElement("span");
-      span.className = "text-blue clickable";
-      span.textContent = text;
-      span.onclick = () => playSegment(start, end);
-
-      p.appendChild(span);
-    } else {
-      const [en, pt] = item;
-      p.innerHTML = `<span class="text-blue">${en}</span><br><span class="text-white">${pt}</span>`;
-    }
-
-    col.appendChild(p);
-  }
-});
-
-
-      grid.appendChild(col);
-    });
-
-    div.appendChild(grid);
-    stack.appendChild(div);
-  });
-}
-
-
-function playSegment(start, end) {
-  const iframe = document.querySelector("iframe");
-  iframe.contentWindow.postMessage(
-    JSON.stringify({
-      event: "command",
-      func: "loadVideoById",
-      args: [{
-        videoId: currentVideoId,
-        startSeconds: start,
-        endSeconds: end
-      }]
-    }),
-    "*"
-  );
-}
-
-function toggleText(button) {
-  const card = button.closest(".listening-card");
-  const isNowVisible = card.classList.toggle("show-text");
-  button.textContent = isNowVisible ? "🙈 Ocultar" : "👁️ Exibir";
-}
-
-
-
-window.onload = () => {
-  loadLessonContent();
-};
