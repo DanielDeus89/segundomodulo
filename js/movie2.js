@@ -1,5 +1,5 @@
 const lessonTitle = "Movie 02 - BEN 10 Live Action";
-const currentVideoId = "xTABQCqeTFo";
+const currentVideoId = "dy_DqOvVWRk";
 
 const timeRanges = [
   { start: 0, end: 999 }, //https://youtu.be/jd6IWqKNI6M?t=18
