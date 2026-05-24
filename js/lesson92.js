@@ -12,8 +12,8 @@ const timeRanges = [
   { start: 633, end: 755 }, //Practice
   { start: 755, end: 840 }, //Change Into - or +
   { start: 858, end: 869 }, //Practice aqui
-  { start: 900, end: 940 }, 
-  { start: 940, end: 99999 }, 
+  { start: 900, end: 964 }, 
+  { start: 964, end: 99999 }, 
 
 ];
 
@@ -23,15 +23,35 @@ const lessonCards = [
   "columns": [
     [
       ["Are you taking online classes this semester?", ""],
-      ["Unfortunately, I can't take classes this semester.", ""],
-      ["When are you going to take the classes then?", ""],
+      ["<strong>Unfortunately</strong>, I can't take classes this semester.", ""],
+      ["<strong>When are you going</strong> to take the classes <strong>then</strong>?", ""],
       ["", " "],
 
       ["Are you traveling this Sunday?", ""],
+      ["{{Unfortunately, I can't travel this Sunday.}}", ""],
+      ["{{When are you going to travel then?}}", ""],
+      ["", " "],
+
+
       ["Are you going to the States in July?", ""],
+      ["{{Unfortunately, I can't go to the States in July.}}", ""],
+      ["{{When are you going to the States then?}}", ""],
+      ["", " "],
+
       ["Are you playing with us tonight?", ""],
+      ["{{Unfortunately, I can't play with you tonight.}}", ""],
+      ["{{When are you going to play with us then?}}", ""],
+      ["", " "],
+
       ["Are you marrying Jane this year?", ""],
-      ["Are you going to play with us this season?", ""]
+      ["{{Unfortunately, I can't marry Jane this year.}}", ""],
+      ["{{When are you going to marry Jane then?}}", ""],
+      ["", " "],
+
+
+      ["Are you going to play with us this season?", ""],
+      ["{{Unfortunately, I can't play with you this season.}}", ""],
+      ["{{When are you going to play with us then?}}", ""]
     ]
   ]
 },
@@ -39,16 +59,34 @@ const lessonCards = [
   "title": "Fluency in Pairs",
   "columns": [
     [
-      ["How many languages can you speak?", " (English / Japanese)"],
-      ["Actually, I can only speak English.", ""],
-      ["Would you like to learn Japanese too?", ""],
+      ["How many languages can you speak?", "(English / Japanese)"],
+      ["<strong>Actually</strong>, I can only speak English.", ""],
+      ["<strong>Would you like</strong> to learn Japanese <strong>too</strong>?", ""],
       ["", " "],
 
       ["What sports can you play?", "(football / tennis)"],
+      ["{{Actually, I can only play football.}}", ""],
+      ["{{Would you like to learn tennis too?}}", ""],
+      ["", " "],
+
       ["What instruments can you play?", "(piano / flute)"],
+      ["{{Actually, I can only play the piano.}}", ""],
+      ["{{Would you like to learn the flute too?}}", ""],
+      ["", " "],
+
       ["What kinds of food can you cook?", "(Italian / Chinese)"],
+      ["{{Actually, I can only cook Italian food.}}", ""],
+      ["{{Would you like to learn Chinese food too?}}", ""],
+      ["", " "],
+
       ["What kinds of vehicles can you drive?", "(cars / trucks)"],
-      ["What kinds of music can you dance to?", "(pop / salsa)"]
+      ["{{Actually, I can only drive cars.}}", ""],
+      ["{{Would you like to learn to drive trucks too?}}", ""],
+      ["", " "],
+
+      ["What kinds of music can you dance to?", "(pop / salsa)"],
+      ["{{Actually, I can only dance to pop music.}}", ""],
+      ["{{Would you like to learn salsa too?}}", ""]
     ]
   ]
 },
@@ -110,20 +148,20 @@ const lessonCards = [
   "type": "listening",
   "columns": [
     [
-      ["Every individual has different skills, gifts and {{talents}}.", "", 0, 0],
-      ["{{Many times}} you find people that will say:", "", 0, 0],
-      ["I {{don't have}} any talent or I {{don't know}} what talent I have.", "", 0, 0],
-      ["If this happens to you, {{don't panic}}.", "", 0, 0],
-      ["{{You're normal}}.", "", 0, 0],
-      ["What you need to do is {{take the time}} to ponder about your potential, your possibilities and your opportunities.", "", 0, 0],
-      ["When you {{ask yourself}}...", "", 0, 0],
-      ["What's my mission in life?", "", 0, 0],
-      ["What college am I going to attend?", "", 0, 0],
-      ["What career will I have?", "", 0, 0],
-      ["{{What about my family}}?", "", 0, 0],
-      ["Sooner or later you will receive the answer you seek.", "", 0, 0],
-      ["Through meditation you will receive the inspiration you need to know exactly what your mission is.", "", 0, 0],
-      ["You will find the answers that will give you direction, comfort and peace of mind.", "", 0, 0]
+      ["Every individual has different skills, gifts and {{talents}}.", "", 904, 911],
+      ["{{Many times}} you find people that will say:", "", 911, 914],
+      ["I {{don't have}} any talent or I {{don't know}} what talent I have.", "", 914, 920],
+      ["If this happens to you, {{don't panic}}.", "", 920, 923],
+      ["{{You're normal}}.", "", 923, 924],
+      ["What you need to do is {{take the time}} to ponder about your potential, your possibilities and your opportunities.", "", 924, 934],
+      ["When you {{ask yourself}}...", "", 934, 936],
+      ["What's my mission in life?", "", 936, 938],
+      ["What college am I going to attend?", "", 938, 941],
+      ["What career will I have?", "", 941, 943],
+      ["{{What about my family}}?", "", 943, 945],
+      ["Sooner or later you will receive the answer you seek.", "", 945, 950],
+      ["Through meditation you will receive the inspiration you need to know exactly what your mission is.", "", 950, 957],
+      ["You will find the answers that will give you direction, comfort and peace of mind.", "", 957, 964]
     ]
   ]
 }
@@ -133,11 +171,11 @@ const lessonCards = [
   title: "Listening & Comprehension",
   type: "listening",
   segments: [
-    { text: " ", start: 1395, end: 1400 }, //https://youtu.be/yeAbAUL7BWs?t=217
-    { text: " ", start: 1400, end: 1403 }, //https://youtu.be/yeAbAUL7BWs?t=222
-    { text: " ", start: 1403, end: 1407 }, //https://youtu.be/yeAbAUL7BWs?t=229
-    { text: " ", start: 1406, end: 1411 }, // https://youtu.be/yeAbAUL7BWs?t=237
-    { text: " ", start: 1411, end: 1415 } //https://youtu.be/yeAbAUL7BWs?t=241 
+    { text: " ", start: 966, end: 970 }, //https://youtu.be/yeAbAUL7BWs?t=217
+    { text: " ", start: 970, end: 974 }, //https://youtu.be/yeAbAUL7BWs?t=222
+    { text: " ", start: 974, end: 979 }, //https://youtu.be/yeAbAUL7BWs?t=229
+    { text: " ", start: 979, end: 983 }, // https://youtu.be/yeAbAUL7BWs?t=237
+    { text: " ", start: 983, end: 988 } //https://youtu.be/yeAbAUL7BWs?t=241 
   ]
 }
 

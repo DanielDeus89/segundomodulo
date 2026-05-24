@@ -396,3 +396,8 @@ body {
     order: -1;
   }
 }
+
+.text-blue strong {
+  font-weight: 900;
+  color: #000;
+}
