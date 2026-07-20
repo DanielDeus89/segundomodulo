@@ -164,9 +164,7 @@ const lessonCards = [
       ["You will find the answers that will give you direction, comfort and peace of mind.", "", 957, 964]
     ]
   ]
-}
-  ,
-
+},
 {
   title: "Listening & Comprehension",
   type: "listening",
