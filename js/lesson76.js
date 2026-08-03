@@ -1,5 +1,5 @@
 const lessonTitle = "Lesson 76";
-const currentVideoId = "PPc3fnhPLKg";
+const currentVideoId = "4iYqReSKr6Q";
 
 const timeRanges = [
 
