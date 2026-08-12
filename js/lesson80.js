@@ -41,7 +41,6 @@ const lessonCards = [
 
 
 
-
  {
   "title": "Conversation in Trio",
   "columns": [
@@ -259,23 +258,35 @@ const lessonCards = [
   ]
 },
 {
-  "title": "Listening & Comprehension - Laughter is a Therapy",
+  "title": "Listening & Comprehension - Laughter is a therapy",
+  "type": "listening",
   "columns": [
     [
-      ["Laughter is a universal _____.", "", 1088, 1092],
-      ["It's so contagious that you can be _____ where you don't speak the language,", "", 1092, 1097],
-      ["and _____ laughing, probably people around you will start laughing too.", "", 1097, 1103],
-      ["_____ you laugh your body produces a substance called “endorphin”.", "", 1103, 1111],
-      ["This substance makes you feel good.", "", 1110, 1114],
-      ["_____ in a bad mood, you will automatically feel better.", "", 1114, 1118],
-      ["So, laughter is a natural antidepressant.", "", 1118, 1121],
-      ["_____ your laughter.", "", 1121, 1123],
-      ["Laugh a lot each day. It’s a great remedy for your health.", "", 1123, 1129],
-      ["Laughter _____ you deal with disappointment, frustration or despair.", "", 1129,1135],
-      ["Laughter is contagious. Laughter is a therapy.", "", 1135, 1140]
+      ["Laughter is a universal language.", "", 1089, 1092],,
+
+      ["It's so contagious that you can be in a country where you don't speak the language, and if you start laughing, probably people around you will start laughing too.", "", 1092, 1103],
+
+      ["Why does it feel so good to laugh?", "", 1103, 1106],
+
+      ["{{Every time you laugh}} your body produces a substance called \"endorphin\".", "", 1106, 1111],
+
+      ["This substance makes you feel good.", "", 1111, 1114],
+
+      ["{{If you are}} in a bad mood, you will automatically feel better.", "", 1114, 1119],
+
+      ["So, laughter is a natural antidepressant.", "", 1119, 1122],
+
+      ["{{Don't stop}} your laughter. Laugh a lot each day.", "", 1122, 1127],
+
+      ["It's a great remedy for your health.", "", 1126, 1130],
+
+      ["Laughter {{can help you}} deal with disappointment, frustration or despair.", "", 1130, 1136],
+
+      ["Laughter is contagious. Laughter is a therapy.", "", 1136, 1141]
     ]
   ]
 },
+
 
 {
   "title": "Listen and Answer",
@@ -356,147 +367,3 @@ const lessonCards = [
 }
 
 ];
-
-function loadLessonContent() {
-  document.getElementById("lessonTitle").textContent = lessonTitle;
-  const stack = document.querySelector(".card-stack");
-  stack.innerHTML = "";
-
-  lessonCards.forEach((card, index) => {
-    const div = document.createElement("div");
-    div.className = "card";
-    if (index === 0) div.classList.add("active");
-
-    // Verifica se existe imagem no card
-if (card.image) {
-  const img = document.createElement("img");
-  img.src = card.image;
-  img.alt = "Imagem da pergunta";
-  img.style.maxWidth = "100%";
-  img.style.marginBottom = "10px";
-  div.appendChild(img);
-}
-
-
-    if (card.title) {
-      const h2 = document.createElement("h2");
-      h2.className = "section-title";
-      h2.textContent = card.title;
-      div.appendChild(h2);
-    }
-
-    // Cards do tipo Listening
-    if (card.type === "listening" && Array.isArray(card.segments)) {
-      const row = document.createElement("div");
-      row.className = "listening-row";
-
-      card.segments.forEach((segment) => {
-        const cardDiv = document.createElement("div");
-        cardDiv.className = "listening-card";
-
-        const playBtn = document.createElement("button");
-        playBtn.textContent = "▶️ Ouvir";
-        playBtn.onclick = () => playSegment(segment.start, segment.end);
-
-        const toggleBtn = document.createElement("button");
-        toggleBtn.textContent = "👁️ Exibir";
-        toggleBtn.onclick = function () {
-          toggleText(this);
-        };
-
-        const span = document.createElement("span");
-        span.className = "hidden-text";
-        span.textContent = segment.text;
-
-        cardDiv.appendChild(playBtn);
-        cardDiv.appendChild(toggleBtn);
-        cardDiv.appendChild(span);
-        row.appendChild(cardDiv);
-      });
-
-      div.appendChild(row);
-      stack.appendChild(div);
-      return;
-    }
-
-    // Outros tipos de cards
-    const grid = document.createElement("div");
-    grid.className = "grid2";
-
-    card.columns.forEach(colData => {
-      const col = document.createElement("div");
-      col.className = "vocab-col";
-
-colData.forEach(item => {
-  // Verifica se é uma imagem
-  if (item[0] === "img" && item[1]) {
-    const img = document.createElement("img");
-    img.src = item[1];
-    img.alt = "Imagem da coluna";
-   img.style.display = "block";
-img.style.margin = "0 auto 30px";
-img.style.maxWidth = "200%";
-img.style.maxHeight = "300px";
-img.style.borderRadius = "8px";
-img.style.boxShadow = "0 2px 6px rgba(0,0,0,0.1)";
-
-    
-    col.appendChild(img);
-  } else {
-    const p = document.createElement("p");
-
-    if (item.length === 4) {
-      const [text, , start, end] = item;
-
-      const span = document.createElement("span");
-      span.className = "text-blue clickable";
-      span.textContent = text;
-      span.onclick = () => playSegment(start, end);
-
-      p.appendChild(span);
-    } else {
-      const [en, pt] = item;
-      p.innerHTML = `<span class="text-blue">${en}</span><br><span class="text-white">${pt}</span>`;
-    }
-
-    col.appendChild(p);
-  }
-});
-
-
-      grid.appendChild(col);
-    });
-
-    div.appendChild(grid);
-    stack.appendChild(div);
-  });
-}
-
-
-function playSegment(start, end) {
-  const iframe = document.querySelector("iframe");
-  iframe.contentWindow.postMessage(
-    JSON.stringify({
-      event: "command",
-      func: "loadVideoById",
-      args: [{
-        videoId: currentVideoId,
-        startSeconds: start,
-        endSeconds: end
-      }]
-    }),
-    "*"
-  );
-}
-
-function toggleText(button) {
-  const card = button.closest(".listening-card");
-  const isNowVisible = card.classList.toggle("show-text");
-  button.textContent = isNowVisible ? "🙈 Ocultar" : "👁️ Exibir";
-}
-
-
-
-window.onload = () => {
-  loadLessonContent();
-};
