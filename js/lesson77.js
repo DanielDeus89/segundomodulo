@@ -1,5 +1,5 @@
 const lessonTitle = "Lesson 77";
-const currentVideoId = "hhttps://youtu.be/denJRCQCCdcdenJRCQCCdc";
+const currentVideoId = "denJRCQCCdc";
 
 const timeRanges = [
   { start: 9, end: 30 }, //https://youtu.be/Q9eIX3bjKQs?t=30
