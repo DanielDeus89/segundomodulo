@@ -1,5 +1,5 @@
 const lessonTitle = "Review 3 ";
-const currentVideoId = "a7xSBqOFL5o";
+const currentVideoId = "szDOTOprcAE";
 
 const timeRanges = [
   { start: 0, end: 72 },  
@@ -24,6 +24,7 @@ const lessonCards = [
       ]
     ]
   },
+
 {
   "title": "Irregular Verbs",
   "columns": [
@@ -72,5 +73,28 @@ const lessonCards = [
       ]
     ]
   },
-
+{
+  "title": "Express Yourself",
+  "columns": [
+    [
+      ["BETTER LATE than never.", "Antes tarde do que nunca."],
+      ["BETTER SAFE than sorry.", "Melhor prevenir do que remediar."],
+      ["FROM NOW on.", "De agora em diante."],
+      ["HERE we go.", "Lá vamos nós."],
+      ["HOME sweet home.", "Lar doce lar."],
+      ["I AM so sorry.", "Sinto muito mesmo."],
+      ["IT'S ABOUT time.", "Já estava na hora."],
+      ["LADIES first.", "As damas primeiro."]
+    ],
+    [
+      ["MAYBE SO maybe not.", "Talvez sim, talvez não."],
+      ["MONKEY SEE monkey do.", "Macaco vê, macaco faz."],
+      ["NEVER say never.", "Nunca diga nunca."],
+      ["SEE YOU later.", "Até mais tarde."],
+      ["SOONER or later.", "Mais cedo ou mais tarde."],
+      ["THE SOONER the better.", "Quanto antes, melhor."],
+      ["TOMORROW is another day.", "Amanhã é outro dia."]
+    ]
+  ]
+},
 ];
